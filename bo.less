@@ -816,39 +816,29 @@ pre, .mw-code,
 
 /* navbar overrides */
 
-html.client-js body #mw-navigation div.container-fluid{
-	div#mw-navigation-collapse.collapse.navbar-collapse {
-		ul.nav.navbar-nav{
-			li.dropdown{
-				.open{
-					a.dropdown-toggle{
-						color: @color-white;
-					}
-					
-
-					.dropdown-menu > li > a {
-						&:focus,
-						&:hover{
-							color: @color-link;
-						}
-					}
-						
-				}
-				.dropdown-menu{
-					li{
-						a:focus,
-						a:hover{
-							color:@color-link;
-						}
+#mw-navigation{
+	#mw-navigation-collapse{
+		.dropdown-menu{
+			li{
+				a{
+					&:focus,
+					&:hover{
+						color: @color-link;
+						text-decoration-color: fade(@color-link, 60%);
 					}
 				}
 			}
 		}
 	}
-} 
+}
 
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus{
 	background-color: @color-pale;
 }
 
+#p-logo:hover{
+	background-color: fade(@color-pale, 5%);
+}
 
