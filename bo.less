@@ -815,6 +815,11 @@ pre, .mw-code,
    padding: 1em;
 }
 
+#bodyContent img{
+	max-width: 100%;
+	height: auto;
+}
+
 /* navbar overrides */
 
 #mw-navigation{
@@ -860,6 +865,10 @@ pre, .mw-code,
 
 .smwofooterrowtb.row{
 	background-color: fade(@color-dark, 20%);
+	.navbar{
+		background-color: transparent;
+		display: none;
+	}
 }
 
 .smwofooterrowb{
@@ -868,4 +877,8 @@ pre, .mw-code,
 			line-height: 320%;
 		}
 	}	
+}
+
+fieldset{
+	    border: 1px solid fade(@color-dark, 30%);
 }

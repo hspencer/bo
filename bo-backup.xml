@@ -24,67 +24,118 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 @ingroup Skins
 -->
 <structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
+
 	<component type="NavbarHorizontal">
+
 		<modification type="Sticky"/>
+
 		<component type="Logo" position="head"/> 
+
 		<component type="NavMenu" flatten="navigation" showTools="no" showLanguages="no"/>
+
 		<component type="PageTools" position="right" hideSelectedNameSpace="yes"/>
+
 		<component type="SearchBar" position="right" buttons="search"/>
+
 		<component type="PersonalTools" position="right"/>
+
 	</component>
 
 	<grid class="smwomaingrid">
+
 		<row>
+
 			<cell span="12">
+
 				<component type="SiteNotice"/>
+
 			</cell>
+
 		</row>
 
 		<row>
+
 			<cell span="12">
+
 				<component type="MainContent"/>
+
 			</cell>
+
 		</row>
+
 	</grid>
 
 	<grid class="smwofootergrid">
 
-		<row class="smwofooterrow">
+		<row class="smwofooterrowtb">
 
 			<cell span="1">
+
 				<component type="container" class="footer"/>
+
 			</cell>
 
-			<cell span="5">
-				<component type="FooterInfo"/>
-			</cell>
+			<cell span="10" class="smwofootercomptb">
 
-			<cell span="5">
-				<component type="ToolbarHorizontal" hideTools="no" hideLanguages="yes"/>
+				<component type="ToolbarHorizontal" hideTools="yes" hideLanguages="yes"/>
+				
 			</cell>
 
 			<cell span="1">
+
 				<component type="container" class="footer"/>
+				
 			</cell>
 
 		</row>
 
+		<row class="smwofooterrow">
+
+			<cell span="1">
+				
+				
+				
+				<component type="container" class="footer"/>
+
+			</cell>
+
+			<cell span="10">
+				<component type="ToolbarHorizontal" hideTools="no" hideLanguages="yes"/>
+				<component type="FooterInfo"/>
+			</cell>
+
+			<cell span="1">
+
+				<component type="container" class="footer"/>
+
+			</cell>
+		</row>
+
 		<row class="smwofooterrowb">
 
+
 			<cell span="1">
-				<component type="container" class="footer"/>
+
+				<component type="container" class="footerb"/>
+
 			</cell>
 
-			<cell span="5">
-				<component type="FooterIcons"/>
-			</cell>
+			<cell span="6">
 
-			<cell span="5">
 				<component type="FooterPlaces"/>
+
+			</cell>
+
+			<cell span="4">
+
+				<component type="FooterIcons"/>
+
 			</cell>
 
 			<cell span="1">
-				<component type="container" class="footer"/>
+
+				<component type="container" class="footerb"/>
+
 			</cell>
 
 		</row>
