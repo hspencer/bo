@@ -31,7 +31,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 		<component type="Logo" position="head"/> 
 
-		<component type="NavMenu" flatten="navigation" showTools="yes" showLanguages="no"/>
+		<component type="NavMenu" flatten="navigation" showTools="no" showLanguages="no"/>
 
 		<component type="PageTools" position="right" hideSelectedNameSpace="yes"/>
 
@@ -78,13 +78,13 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 			<cell span="10" class="smwofootercomptb">
 
 				<component type="ToolbarHorizontal" hideTools="yes" hideLanguages="yes"/>
-
+				
 			</cell>
 
 			<cell span="1">
 
 				<component type="container" class="footer"/>
-
+				
 			</cell>
 
 		</row>
@@ -92,13 +92,15 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 		<row class="smwofooterrow">
 
 			<cell span="1">
-
+				
+				
+				
 				<component type="container" class="footer"/>
 
 			</cell>
 
 			<cell span="10">
-
+				<component type="ToolbarHorizontal" hideTools="no" hideLanguages="yes"/>
 				<component type="FooterInfo"/>
 
 			</cell>
