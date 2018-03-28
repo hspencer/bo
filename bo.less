@@ -18,7 +18,10 @@
 @color-red: 			#f30000;
 @color-ocre: 			#725b06;
 @color-purple: 			#510e1c;
+@color-gray:			#656565;
+@navbar-bg:             #202020;
 @footer-bg: 			fade(@navbar-bg, 10%);
+
 
 @navbar-default-bg: @navbar-bg;
 @nav-tabs-active-link-hover-color: @color-white;
@@ -45,7 +48,7 @@ html {
 
 body {
 	/* Margin bottom by footer height see also ".smwofootergrid.container" */
-	margin-bottom: @footer-height;
+	/* margin-bottom: @footer-height; */
 }
 
 /* fix gap between header and content */
@@ -238,6 +241,17 @@ table a:not(.btn),
 	}
 }
 
+/* Links */
+
+a.new{
+	color: @color-gray;
+	&:link,
+	&:hover,
+	&:visited{
+		color: lighten(@color-gray, 20%);
+	}
+}
+
 /* Document management specific changes */
 .dropdown-content.document-draft {
 	border-top: 5px solid @color-yellow;
@@ -309,6 +323,17 @@ a.smw-ask-action-btn-dblue {
 		border-color: transparent !important;
 	}
 }
+
+.navbar-right-aligned{
+	input#searchInput{
+		border-color: transparent;
+		background-color: @color-gray;
+		&:focus{
+			background-color: @color-white;
+		}
+	}
+}
+
 
 a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 	color: @color-white;
@@ -448,6 +473,11 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 			}
 		}
 	}
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus{
+	background-color: @color-pale;
 }
 
 /* navbar - personal tools -universal language selector */
@@ -592,7 +622,7 @@ ul.lqt-thread-toolbar-commands {
  * Footer
  */
 .smwofootergrid.container {
-	position: absolute;
+	/* position: absolute; */
   	bottom: 0;
   	width: 100%;
   	/* Set the fixed height of the footer here */
@@ -818,6 +848,12 @@ pre, .mw-code,
 #bodyContent img{
 	max-width: 100%;
 	height: auto;
+}
+
+.thumbcaption{
+	font-family: @font-family-serif;
+	font-style: italic;
+	font-size: 90%;
 }
 
 /* navbar overrides */
