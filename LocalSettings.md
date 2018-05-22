@@ -1,14 +1,19 @@
 # Code to "LocalSettings.php" for using the bo flavour to the MediaWiki Chameleon skin
 
 ```php
-# Chameleon
-// Composer
-$egChameleonLayoutFile = __DIR__ . '/skins/bo/bo.xml';
+# Chameleon Overrides for BO
+
+## Define Layout
+
+#$egChameleonLayoutFile = __DIR__ . '/skins/bo/layout-navbar.xml';
+$egChameleonLayoutFile = __DIR__ . '/skins/bo/layout-tools.xml';
+
 $egChameleonExternalStyleModules = [
 	__DIR__ . '/skins/bo/bootswatch.less' => $wgScriptPath,
 	__DIR__ . '/skins/bo/variables.less' => $wgScriptPath,
 	__DIR__ . '/skins/bo/bo.less' => $wgScriptPath
 	];
+
 $egChameleonExternalLessVariables = [
 	'font-size-base' => '18px',
 	'font-size-large' => '20px',
@@ -17,7 +22,6 @@ $egChameleonExternalLessVariables = [
 	'font-size-h2' => '20px',
 	'font-size-h3' => '18px',
 	'line-height-base' => '1.5', 
-	#'navbar-height' => '80px',
 	'navbar-margin-bottom' => '10px',
 	'navbar-default-bg' => 'rgba( 94, 157, 200, 1 )',
 	'navbar-default-border' => 'rgba( 94, 157, 200, 1 )',
@@ -26,4 +30,14 @@ $egChameleonExternalLessVariables = [
 
 ## Default skin (optional)
 $wgDefaultSkin = 'chameleon';
+```
+
+You can add this code if you wish to recompile css after modifying the less files:
+
+```php
+# for testing and customizing
+\Bootstrap\BootstrapManager::getInstance()->addCacheTriggerFile( __DIR__ . '/skins/bo/bo.less' );
+\Bootstrap\BootstrapManager::getInstance()->addCacheTriggerFile( __DIR__ . '/skins/bo/botswatch.less' );
+\Bootstrap\BootstrapManager::getInstance()->addCacheTriggerFile( __DIR__ . '/skins/bo/variables.less' );
+
 ```

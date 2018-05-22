@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<?xml-model href="https://cmln.github.io/chameleon/schema/1.0/layout.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+This file is part of the MediaWiki Chameleon skin and serves its bo flavour.
+
+@copyright 2013 - 2016, Stephan Gambke
+@license   GNU General Public License, version 3 (or any later version)
+
+This layout has Pagetools visible in body content
+
+@author Herbert Spencer
+-->
+<structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
+	<component type="NavbarHorizontal">
+		<modification type="Sticky"/>
+		<component type="Logo" position="head"/> 
+		<component type="NavMenu" flatten="navigation" showTools="no" showLanguages="no"/>
+		<component type="SearchBar" position="right" buttons="search"/>
+		<component type="PersonalTools" position="right"/>
+	</component>
+
+	<grid class="smwomaingrid pagetools">
+		<row>
+			<cell span="12">
+				<component type="PageTools" position="right" hideSelectedNameSpace="yes"/>
+			</cell>
+		</row>
+	</grid>
+
+	<grid class="smwomaingrid">
+		<row>
+			<cell span="12">
+				<component type="SiteNotice"/>
+			</cell>
+		</row>
+
+		<row>
+			<cell span="12">
+				<component type="MainContent"/>
+			</cell>
+		</row>
+	</grid>
+
+	<grid class="smwofootergrid">
+
+		<row class="smwofooterrow">
+
+			<cell span="1">
+				<component type="container" class="footer"/>
+			</cell>
+
+			<cell span="5">
+				<component type="FooterInfo"/>
+			</cell>
+
+			<cell span="5">
+				<component type="ToolbarHorizontal" hideTools="no" hideLanguages="yes"/>
+			</cell>
+
+			<cell span="1">
+				<component type="container" class="footer"/>
+			</cell>
+
+		</row>
+
+		<row class="smwofooterrowb">
+
+			<cell span="1">
+				<component type="container" class="footer"/>
+			</cell>
+
+			<cell span="5">
+				<component type="FooterIcons"/>
+			</cell>
+
+			<cell span="5">
+				<component type="FooterPlaces"/>
+			</cell>
+
+			<cell span="1">
+				<component type="container" class="footer"/>
+			</cell>
+
+		</row>
+
+	</grid>
+
+</structure>

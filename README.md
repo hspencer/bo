@@ -1,11 +1,11 @@
 # Bo
-**Bo** is a flavour of the MediaWiki Chameleon skin building upon the [Stragula](https://github.com/SemanticMediaWiki/Stragula) flavour of the Bootswatch themes collection for Bootstrap.
+**Bo** is a flavour of the MediaWiki Chameleon skin buildt upon the [Stragula](https://github.com/SemanticMediaWiki/Stragula) flavour of the Bootswatch themes collection for Bootstrap.
+
+This theme was specially crafted for [Amereida](http://www.amereida.cl) and [Casiopea](http://wiki.ead.pucv.cl).
 
 Licensed [ISC](https://github.com/SemanticMediaWiki/bo/blob/master/COPYING) and copyrighted in 2018 by [Karsten Hoffmeyer](https://github.com/kghbln).
 
-First created by [Karsten Hoffmeyer](https://github.com/kghbln) with improvements provided by [Stephan Gambke](https://github.com/s7eph4n) and [Iván Hernández Cazorla](https://github.com/ivanhercaz). 
-
-This custom flavor was tweaked by [Herbert Spencer](https://github.com/hspencer).
+First created by [Karsten Hoffmeyer](https://github.com/kghbln) with improvements provided by [Stephan Gambke](https://github.com/s7eph4n) and [Iván Hernández Cazorla](https://github.com/ivanhercaz), this modification was further modified and adapted by [Herbert Spencer](https://github.com/hspencer) as an independent module. 
 
 ## Using this flavour
 To use this flavour on your wiki you will have to install the [MediaWiki Chameleon skin](https://www.mediawiki.org/wiki/Skin:Chameleon) first, move in this repo to the "skin" directory of your wiki and add the code as stated in the [documentation](/LocalSettings.md/) to your "LocalSettings.php" file.

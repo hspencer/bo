@@ -917,3 +917,34 @@ pre, .mw-code,
 fieldset{
 	    border: 1px solid fade(@color-dark, 30%);
 }
+
+
+.pagetools{
+	.row{
+		div{
+			ul{
+				margin-top: 1em;
+				li{
+					ul{
+						li{
+							a{
+								display: inline-block;
+								padding: 2px 6px 0 6px;
+								font-size: 12px;
+								letter-spacing: 0.03ex;
+								text-transform: uppercase;
+								font-weight: bolder;
+								border-radius: 4px;
+								&:hover{
+									text-decoration: none;
+									background-color: fade(@color-yellow-pale, 20);
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
