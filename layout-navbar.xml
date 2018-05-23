@@ -12,6 +12,7 @@ This layout has Pagetools in navbar
 @author Herbert Spencer
 -->
 <structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
+	
 	<component type="NavbarHorizontal">
 		<modification type="Sticky"/>
 		<component type="Logo" position="head"/> 
@@ -76,5 +77,7 @@ This layout has Pagetools in navbar
 			</cell>
 
 		</row>
+
 	</grid>
+	
 </structure>

@@ -139,6 +139,7 @@ table a:not(.btn),
 	position: relative;
 	display: inline-block;
 	&:hover {
+		
 		/* Show the dropdown menu on hover */
 		.dropdown-content {
 			display: block;
@@ -182,6 +183,7 @@ table a:not(.btn),
 	left: auto;
 	right: 0;
 	border-top: 5px solid @color-brown;
+	
 	/* Links inside the dropdown */
 	a {
 		background-color: @color-white;
@@ -191,6 +193,7 @@ table a:not(.btn),
 		display: block;
 		text-align: left;
 		min-width: 150px;
+		
 		/* Change color of dropdown links on hover */
 		&:hover,
 		&:focus {
@@ -364,7 +367,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 	.open > .dropdown-toggle {
 		color: @color;
 		background-color: @btn-default-focus-bg;
-		border-color: @btn-default-focus-border;
+		border-color: transparent;
 		&:not(:focus),
 		&:hover,
 		&:focus,
@@ -408,6 +411,35 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 		color: @color-brown;
 		text-decoration: underline;
 		text-decoration-color: @color-brown;
+	}
+}
+
+/* Search button*/
+#mw-searchButton{
+	border-color: transparent;
+	&:hover,
+	&:active{
+		background-color: @color-pale;
+	}
+}
+
+/* Navbar user menu color override */
+.skin-chameleon .navbar-tools{
+	> li{
+		> a.navbar-userloggedin{
+				&:hover,
+				&:focus{
+					background-color: @color-pale !important;
+				}
+			}
+		.open{
+			> a.navbar-userloggedin{
+				&:hover,
+				&:focus{
+					background-color: @color-red !important;
+				}
+			}
+		}
 	}
 }
 

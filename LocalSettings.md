@@ -1,10 +1,13 @@
 # Code to "LocalSettings.php" for using the bo flavour to the MediaWiki Chameleon skin
 
 ```php
+
+## Default skin 
+$wgDefaultSkin = 'chameleon';
+
 # Chameleon Overrides for BO
 
 ## Define Layout
-
 #$egChameleonLayoutFile = __DIR__ . '/skins/bo/layout-navbar.xml';
 $egChameleonLayoutFile = __DIR__ . '/skins/bo/layout-tools.xml';
 
@@ -26,10 +29,9 @@ $egChameleonExternalLessVariables = [
 	'navbar-default-bg' => 'rgba( 94, 157, 200, 1 )',
 	'navbar-default-border' => 'rgba( 94, 157, 200, 1 )',
 	'nav-tabs-active-link-hover-color' => 'rgba( 255, 255, 255, 1 )',
+	'input-border-focus' => 'rgba(0, 0, 0, .1)'
 	];
 
-## Default skin (optional)
-$wgDefaultSkin = 'chameleon';
 ```
 
 You can add this code if you wish to recompile css after modifying the less files:
