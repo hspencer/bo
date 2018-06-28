@@ -397,6 +397,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 }
 
 /* navbar - dropdown */
+
 .navbar .dropdown-menu > li {
 	> a {
 		background-color: @color-white;
@@ -417,6 +418,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 }
 
 /* Search button*/
+
 #mw-searchButton{
 	border-color: transparent;
 	&:hover,
@@ -426,6 +428,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 }
 
 /* Navbar user menu color override */
+
 .skin-chameleon .navbar-tools{
 	> li{
 		> a.navbar-userloggedin{
@@ -446,6 +449,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 }
 
 /* navbar - dropdown - narrow screen */
+
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 	color: @color-brown;
 	background-color: @color-white;
@@ -480,6 +484,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 	
 
 /* navbar - personal tools - wide screen and narrow screen */
+
 .skin-chameleon .navbar-tools {
 	.open > a {
 		&,
@@ -514,6 +519,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 }
 
 /* navbar - personal tools -universal language selector */
+
 #pt-uls {
 	padding-left: 20px;
 	a.uls-trigger {
@@ -536,6 +542,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 }
 
 /* navbar - personal tools - liquid threads */
+
 #pt-newmessages {
 	a {
 		background-color: @color-white;
@@ -551,6 +558,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 	&.active a {
 
 		// FIXME: Colors should already be covered by #pt-newmessages a
+
 		background-color: @color-white;
 		color: @color-brown;
 
@@ -561,6 +569,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 			color: @color-blue;
 
 			// FIXME: Should already be covered by #pt-newmessages a
+
 			text-decoration: underline;
 			text-decoration-color: @color-brown;
 		}
@@ -568,6 +577,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
 }
 
 /* Echo - navbar - personal tools */
+
 #pt-notifications-alert,
 #pt-notifications-message {
 	.mw-echo-notifications-badge {
@@ -596,6 +606,7 @@ a.dropdown-toggle.navbar-userloggedin span.glyphicon.glyphicon-user {
  */
 
 /* CharInsert */
+
 #specialchars.my-buttons {
 	p#Standard.specialbasic {
 		a {
@@ -651,9 +662,16 @@ ul.lqt-thread-toolbar-commands {
 	}
 }
 
-/**
- * Footer
- */
+/* Content */
+
+#mw-content-text{
+
+	p{
+		.word-wrap();
+	}
+}
+
+/* Footer */
 
 .smwofootergrid.container {
 	/* position: absolute; */
@@ -687,10 +705,13 @@ ul.lqt-thread-toolbar-commands {
 }
 
 /* padding bottom for content before footer */
+
 .mw-body{
 	padding-bottom: 3em;
 }
+
 /* no margins for links to special pages at the bottom */
+
 .smwofootercomptb.col-lg-10 {
 	nav#p-tb.navbar.navbar-default.p-tb {
 		margin-top: 0;
@@ -741,6 +762,7 @@ ul.lqt-thread-toolbar-commands {
 }
 
 /* smworgtable-v2 */
+
 table.smworgtable-v2 {
 	background-color: @color-brown;
 	border: 1px solid @color-brown;
@@ -800,9 +822,8 @@ table.smworgtable-v2-toc {
 	}
 }
 
-/**
- * Manual specific changes
- */
+/* Manual specific changes */
+
 .user-manual {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -833,9 +854,7 @@ table.smworgtable-v2-toc {
     column-rule: 1px solid lightblue;
 }
 
-/**
- * Navigation support
- */
+/* Navigation support  */
 
 .manual-nav {
 	margin-top: 5px;
@@ -984,4 +1003,13 @@ fieldset{
 			}
 		}
 	}
+}
+
+/* hyphenate mixin */
+
+.word-wrap() {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
 }
