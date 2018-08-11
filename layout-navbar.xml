@@ -13,7 +13,7 @@ This layout has Pagetools in navbar
 -->
 <structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
 	
-	<component type="NavbarHorizontal">
+	<component type="NavbarHorizontal" class='hidden-print'>
 		<modification type="Sticky"/>
 		<component type="Logo" position="head"/> 
 		<component type="NavMenu" flatten="navigation" showTools="no" showLanguages="no"/>
@@ -58,24 +58,28 @@ This layout has Pagetools in navbar
 
 		</row>
 
-		<row class="smwofooterrowb">
+		<row class='footerwrap hidden-print'>
+			<grid class="smwofootergrid">
+				
+				<row class="smwofooterrow">
+					<cell span="12">
+						<component type="ToolbarHorizontal" hideTools="no" hideLanguages="yes"/>
+					</cell>
+				</row>
 
-			<cell span="1">
-				<component type="container" class="footer"/>
-			</cell>
+				<row class="smwofooterrow">
+					
+					<cell span="6">
+						<component type="FooterInfo"/>
+					</cell>
+				
+					<cell span="6">
+						<component type="FooterPlaces"/>
+						<component type="FooterIcons"/>
+					</cell>
 
-			<cell span="5">
-				<component type="FooterIcons"/>
-			</cell>
-
-			<cell span="5">
-				<component type="FooterPlaces"/>
-			</cell>
-
-			<cell span="1">
-				<component type="container" class="footer"/>
-			</cell>
-
+				</row>
+			</grid>
 		</row>
 
 	</grid>

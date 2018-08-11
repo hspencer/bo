@@ -13,7 +13,7 @@ This layout has Pagetools visible in body content
 -->
 <structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
 	
-	<component type="NavbarHorizontal">
+	<component type="NavbarHorizontal" class='hidden-print'>
 		<modification type="Sticky"/>
 		<component type="Logo" position="head"/> 
 		<component type="NavMenu" flatten="navigation" showTools="no" showLanguages="no"/>
@@ -21,7 +21,7 @@ This layout has Pagetools visible in body content
 		<component type="PersonalTools" position="right"/>
 	</component>
 
-	<grid class="smwomaingrid pagetools">
+	<grid class="smwomaingrid pagetools hidden-print">
 		<row>
 			<cell span="12">
 				<component type="PageTools" position="right" hideSelectedNameSpace="yes"/>
@@ -31,7 +31,7 @@ This layout has Pagetools visible in body content
 
 	<grid class="smwomaingrid">
 		<row>
-			<cell span="12">
+			<cell span="12 hidden-print">
 				<component type="SiteNotice"/>
 			</cell>
 		</row>
@@ -43,48 +43,28 @@ This layout has Pagetools visible in body content
 		</row>
 	</grid>
 
-	<grid class="smwofootergrid">
+	<row class='footerwrap hidden-print'>
+		<grid class="smwofootergrid">
+			
+			<row class="smwofooterrow">
+				<cell span="12">
+					<component type="ToolbarHorizontal" hideTools="no" hideLanguages="yes"/>
+				</cell>
+			</row>
 
-		<row class="smwofooterrow">
+			<row class="smwofooterrow">
+				
+				<cell span="6">
+					<component type="FooterInfo"/>
+				</cell>
+			
+				<cell span="6">
+					<component type="FooterPlaces"/>
+					<component type="FooterIcons"/>
+				</cell>
 
-			<cell span="1">
-				<component type="container" class="footer"/>
-			</cell>
-
-			<cell span="5">
-				<component type="FooterInfo"/>
-			</cell>
-
-			<cell span="5">
-				<component type="ToolbarHorizontal" hideTools="no" hideLanguages="yes"/>
-			</cell>
-
-			<cell span="1">
-				<component type="container" class="footer"/>
-			</cell>
-
-		</row>
-
-		<row class="smwofooterrowb">
-
-			<cell span="1">
-				<component type="container" class="footer"/>
-			</cell>
-
-			<cell span="5">
-				<component type="FooterIcons"/>
-			</cell>
-
-			<cell span="5">
-				<component type="FooterPlaces"/>
-			</cell>
-
-			<cell span="1">
-				<component type="container" class="footer"/>
-			</cell>
-
-		</row>
-
-	</grid>
+			</row>
+		</grid>
+	</row>
 
 </structure>
