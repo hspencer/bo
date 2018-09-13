@@ -1052,24 +1052,19 @@
  @media print {
 
  	@page {
- 		margin: 32pt;
+ 		margin: 52pt;
  	}
 
- 	@page :left {
- 		margin-right: 64pt;
- 	}
-
- 	@page :right {
- 		margin-left: 64pt;
- 	}
 
     a[href]:after{
-    	font-size: 8pt;
+    	font-size: 7pt;
     	font-family: @font-family-monospace;
-    	color: gray;
     }
+
  	.mw-body{
+ 		max-width: 75%;
  		font-size: 11pt;
+ 		margin: 0 auto;
  		/* imprimir a 2 columnas 
  		-webkit-column-count: 2;
  		-moz-column-count: 2;
@@ -1082,3 +1077,14 @@
  		page-break-after: avoid;
  	}
  }
+
+
+ /* large screen */
+
+@media (min-width: @screen-lg-min) {
+	.mw-body{
+		-webkit-column-count: 2;
+ 		-moz-column-count: 2;
+ 		column-count: 2;
+	}
+}
