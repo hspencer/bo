@@ -124,6 +124,13 @@
  	text-decoration: none;
  }
 
+ table{
+ 	&.wikitable  > * > tr > th, 
+ 	&.wikitable > * > tr > td{
+ 		border: 4px solid transparent;
+ 	}
+ }
+
  .hproduct table tbody tr td {
  	padding: 2px;
  }
@@ -1080,13 +1087,6 @@
 
 
  /* large screen */
-
-/*
 @media (min-width: @screen-lg-min) {
-	.mw-body{
-		-webkit-column-count: 2;
- 		-moz-column-count: 2;
- 		column-count: 2;
-	}
+
 }
-*/
