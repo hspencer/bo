@@ -1020,7 +1020,12 @@
  }
 
 
- .pagetools{
+
+.p-contentnavigation a.selected{
+	font-style: normal;
+}
+
+.pagetools{
  	.row{
  		div{
  			ul{
@@ -1029,8 +1034,9 @@
  					ul{
  						li{
  							a{
+ 								
  								display: inline-block;
- 								padding: 2px 6px 0 6px;
+ 								padding: 2px 6px 3px 6px;
  								font-size: 12px;
  								letter-spacing: 0.03ex;
  								text-transform: uppercase;
@@ -1040,7 +1046,19 @@
  									text-decoration: none;
  									background-color: fade(@color-yellow-pale, 20);
  								}
+ 								&:visited{
+ 									color: @brand-primary;
+ 								}
  							}
+
+ 							&.selected{
+	 							a{
+	 								font-style: normal;
+	 								padding: 2px 6px 0 6px;
+	 								border-radius: 4px 4px 0 0;
+	 								border-bottom: 3px solid @brand-primary;
+	 							}
+	 						}
  						}
  					}
  				}
@@ -1093,7 +1111,12 @@
  }
 
 
- /* large screen */
-@media (min-width: @screen-lg-min) {
+ /* fix footer for telephones  */
 
+.footerwrap{
+	padding: 0 2em;
+	.list-inline.pull-right.footer-icons a img{
+		margin-bottom: 25px;
+	}
 }
+
