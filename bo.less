@@ -1123,16 +1123,23 @@
 /* forms */
 
 table.formtable{
-	th{
-		font-weight: bold;
-		vertical-align: middle;
-	}
-	.checkboxesSpan{
-		label.checkboxLabel{
-			display: inline-block;
-			font-size: 75%;
-			margin: 0 1em 0 0;
-		    min-width: 30%;
+	tbody{
+		tr{
+			th{
+				font-weight: bold;
+				vertical-align: middle;
+			}
+			td{
+				.checkboxesSpan{
+					label.checkboxLabel{
+						display: inline-block;
+						font-size: 75%;
+						font-weight: normal;
+						margin: 0 1em 0 0;
+					    min-width: 30%;
+					}
+				}
+			}
 		}
 	}
 }
