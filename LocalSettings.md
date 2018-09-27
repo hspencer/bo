@@ -16,7 +16,11 @@ $egChameleonExternalStyleModules = [
 	__DIR__ . '/skins/bo/variables.less' => $wgScriptPath,
 	__DIR__ . '/skins/bo/bo.less' => $wgScriptPath
 	];
+```
 
+For overriding Bootstrap variables:
+
+```
 $egChameleonExternalLessVariables = [
 	'font-size-base' => '18px',
 	'font-size-large' => '20px',
