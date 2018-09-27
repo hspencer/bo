@@ -64,16 +64,36 @@ a:active,
  	padding-bottom: 0;
  }
 
-
+/* edit section link */
+.mw-editsection{
+	font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Alegreya Sans";
+    font-weight: bold;
+    a{
+		color: white;
+		background-color: lighten(@color-gray, 20);
+		display: inline-block;
+		padding: 2px 4px 1px 4px;
+		border-radius: 3px;
+		letter-spacing: 0.1ex;
+		&:hover{
+			background-color: @brand-primary;
+			text-decoration: none;
+		}
+	}
+	.mw-editsection-bracket{display: none}
+	
+}
  /* Headings */
 
- h1{letter-spacing: -0.02ex; font-weight: 800}
- h2{font-weight: 600}
- h3{font-weight: 900}
+ h1{letter-spacing: -0.02ex; font-weight: 300}
+ h2{font-weight: 500}
+ h3{font-weight: 700}
  h4, h5, h6{font-family: @font-family-sans-serif}
- h4{font-weight: 900}
- h5{text-transform: uppercase; font-weight: 800 }
- h6{text-transform: uppercase; font-weight: 600}
+ h4{font-weight: 800}
+ h5{text-transform: uppercase; font-weight: 700; letter-spacing: 0.1ex }
+ h6{text-transform: uppercase; font-weight: 500; letter-spacing: 0.1ex}
 
 
  /* horizontal lines */
