@@ -52,8 +52,8 @@
  	/* margin-bottom: @footer-height; */
  }
 
- .mw-body a.external:active,
- a:active {
+a:active,
+.mw-body a.external:active {
  	color: lighten(@link-color, 20)
  }
 
@@ -63,6 +63,18 @@
  	border-bottom: 0;
  	padding-bottom: 0;
  }
+
+
+ /* Headings */
+
+ h1{letter-spacing: -0.02ex; font-weight: 800}
+ h2{font-weight: 600}
+ h3{font-weight: 900}
+ h4, h5, h6{font-family: @font-family-sans-serif}
+ h4{font-weight: 900}
+ h5{text-transform: uppercase; font-weight: 800 }
+ h6{text-transform: uppercase; font-weight: 600}
+
 
  /* horizontal lines */
  hr {
@@ -135,9 +147,7 @@
  	padding: 2px;
  }
 
-/**
- * buttons
- */
+/* buttons */
  .dropbtn {
  	background-color: @color-pale;
  	color: @color-brown;
@@ -149,9 +159,7 @@
  	border-radius: 0 !important;
  }
 
-/**
- * dropdown buttons
- */
+/* dropdown buttons */
 
  /* The container <div> - needed to position the dropdown content */
  .dropdown {
