@@ -41,7 +41,7 @@
  * general
  */
 
- /* enforce a minimum height on every screen */
+/* enforce a minimum height on every screen */
  html {
  	position: relative;
  	min-height: 100%;
@@ -57,7 +57,7 @@ a:active,
  	color: lighten(@link-color, 20)
  }
 
- /* fix gap between header and content */
+/* fix gap between header and content */
  .contentHeader {
  	margin: 0 0 0.5em;
  	border-bottom: 0;
@@ -72,7 +72,7 @@ a:active,
     font-weight: bold;
     a{
 		color: white;
-		background-color: lighten(@color-gray, 20);
+		background-color: lighten(@color-gray, 50);
 		display: inline-block;
 		padding: 2px 4px 1px 4px;
 		border-radius: 3px;
@@ -85,9 +85,9 @@ a:active,
 	.mw-editsection-bracket{display: none}
 	
 }
- /* Headings */
+/* Headings */
 
- h1{letter-spacing: -0.02ex; font-weight: 300}
+ h1{letter-spacing: -0.02ex; font-weight: 500}
  h2{font-weight: 500}
  h3{font-weight: 700}
  h4, h5, h6{font-family: @font-family-sans-serif}
@@ -96,13 +96,13 @@ a:active,
  h6{text-transform: uppercase; font-weight: 500; letter-spacing: 0.1ex}
 
 
- /* horizontal lines */
+/* horizontal lines */
  hr {
  	margin-top: 10px;
  	margin-bottom: 10px;
  }
 
- /* floating */
+/* floating */
  .float-left {
  	float: left;
  }
@@ -111,7 +111,8 @@ a:active,
  	float: right;
  }
 
- /* table of contents */
+/* table of contents */
+
  #toc,
  .toc {
  	h2 {
@@ -134,23 +135,31 @@ a:active,
  	}
  }
 
- /* pre */
+/* Content */
+
+#mw-content-text{
+	ul {
+	    margin-block-end: 1em;
+	}	
+}
+
+/* pre */
  div.smwpre {
  	padding: 0.5em !important;
  }
 
- /* EditTools */
+/* EditTools */
  .mw-editTools {
  	font-size: smaller;
  }
 
- /* Tabs in preferences */
+/* Tabs in preferences */
 
- #preftoc > li.selected > a, #preftoc > li.selected > a:hover, #preftoc > li.selected > a:focus {
+#preftoc > li.selected > a, #preftoc > li.selected > a:hover, #preftoc > li.selected > a:focus {
  	color: black;
  }
 
- /* header cell of configuration parameter template */
+/* header cell of configuration parameter template */
  table a:not(.btn),
  .table a:not(.btn) {
  	text-decoration: none;
@@ -181,7 +190,7 @@ a:active,
 
 /* dropdown buttons */
 
- /* The container <div> - needed to position the dropdown content */
+/* The container <div> - needed to position the dropdown content */
  .dropdown {
  	position: relative;
  	display: inline-block;
@@ -218,7 +227,7 @@ a:active,
  	min-width: 160px;
  }
 
- /* Dropdown Content (Hidden by Default) */
+/* Dropdown Content (Hidden by Default) */
  .dropdown-content {
  	display: none;
  	position: absolute;
@@ -268,7 +277,7 @@ a:active,
  		padding: 0 0 0 0;
  		-webkit-column-break-inside: avoid;
  		page-break-inside: avoid;
- 		break-inside: avoid; /* IE 10+ */
+ 		break-inside: avoid;/* IE 10+ */
  		break-inside: avoid-column;
  	}
  	li {
@@ -291,7 +300,7 @@ a:active,
  	}
  }
 
- /* Links */
+/* Links */
 
  a.new{
  	&:link,
@@ -301,7 +310,7 @@ a:active,
  	}
  }
 
- /* Document management specific changes */
+/* Document management specific changes */
  .dropdown-content.document-draft {
  	border-top: 5px solid @color-yellow;
  }
@@ -309,7 +318,7 @@ a:active,
  	border-top: 5px solid @color-red;
  }
 
- /* Special:Ask buttons */
+/* Special:Ask buttons */
  .smw-ask-action-btn-lblue {
  	color: @color-white !important;
  	background-color: @navbar-default-bg !important;
@@ -398,7 +407,7 @@ a:active,
  	border: none;
  }
 
- /* navbar - search button */
+/* navbar - search button */
  .btn-default {
 
  	@color: @btn-default-color;
@@ -446,7 +455,7 @@ a:active,
  	}
  }
 
- /* navbar - dropdown */
+/* navbar - dropdown */
 
  .navbar .dropdown-menu > li {
  	> a {
@@ -467,7 +476,7 @@ a:active,
  	}
  }
 
- /* Search button*/
+/* Search button*/
 
  #mw-searchButton{
  	border-color: transparent;
@@ -477,7 +486,7 @@ a:active,
  	}
  }
 
- /* Navbar user menu color override */
+/* Navbar user menu color override */
 
  .skin-chameleon .navbar-tools{
  	> li{
@@ -498,7 +507,7 @@ a:active,
  	}
  }
 
- /* navbar - dropdown - narrow screen */
+/* navbar - dropdown - narrow screen */
 
  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
  	color: @color-brown;
@@ -533,7 +542,7 @@ a:active,
  }
 
 
- /* navbar - personal tools - wide screen and narrow screen */
+/* navbar - personal tools - wide screen and narrow screen */
 
  .skin-chameleon .navbar-tools {
  	.open > a {
@@ -568,7 +577,7 @@ a:active,
  	background-color: @color-pale;
  }
 
- /* navbar - personal tools -universal language selector */
+/* navbar - personal tools -universal language selector */
 
  #pt-uls {
  	padding-left: 20px;
@@ -591,7 +600,7 @@ a:active,
  	}
  }
 
- /* navbar - personal tools - liquid threads */
+/* navbar - personal tools - liquid threads */
 
  #pt-newmessages {
  	a {
@@ -655,7 +664,7 @@ a:active,
  * Extensions
  */
 
- /* CharInsert */
+/* CharInsert */
 
  #specialchars.my-buttons {
  	p#Standard.specialbasic {
@@ -669,7 +678,7 @@ a:active,
  	line-height: 1.8em;
  }
 
- /* Liquid Threads */
+/* Liquid Threads */
 
  .lqt_header_content {
  	margin: -1em 0 1.5em;
@@ -702,7 +711,7 @@ a:active,
  	list-style-image: none !important;
  }
 
- /* Semantic Result Formats */
+/* Semantic Result Formats */
 // FIXME: .srf-tree should be handled in SRF
 
 .srf-tree ul li ul {
@@ -818,14 +827,14 @@ a:active,
  * Misc
  */
 
- /* Fix styling of concept descriptions */
+/* Fix styling of concept descriptions */
 
  .concept-documenation {
  	margin-top: 10px;
  	padding: 2px 0;
  }
 
- /* smworgtable-v2 */
+/* smworgtable-v2 */
 
  table.smworgtable-v2 {
  	background-color: @color-brown;
@@ -886,7 +895,7 @@ a:active,
  	}
  }
 
- /* Manual specific changes */
+/* Manual specific changes */
 
  .user-manual {
  	-webkit-column-count: 3;
@@ -918,7 +927,7 @@ a:active,
  	column-rule: 1px solid lightblue;
  }
 
- /* Navigation support  */
+/* Navigation support  */
 
  .manual-nav {
  	margin-top: 5px;
@@ -984,7 +993,7 @@ a:active,
  	font-style: italic;
  }
 
- /* navbar overrides */
+/* navbar overrides */
 
  #mw-navigation{
  	#mw-navigation-collapse{
@@ -1095,7 +1104,7 @@ a:active,
  	}
  }
 
- /* hyphenate mixin */
+/* hyphenate mixin */
 
  .word-wrap() {
  	word-break: break-word;
@@ -1105,7 +1114,7 @@ a:active,
  }
 
 
- /* Print Styles */
+/* Print Styles */
 
 
 
@@ -1139,7 +1148,7 @@ a:active,
  }
 
 
- /* fix footer for telephones  */
+/* fix footer for telephones  */
 
 .footerwrap{
 	padding: 0 2em;
