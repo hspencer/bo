@@ -6,6 +6,7 @@
 /* Colors */
 
 
+
 @color-white: 			#ffffff;
 @color-dark: 			#202020;
 @color-brown: 			#132029;
@@ -147,6 +148,21 @@ a:active,
  div.smwpre {
  	padding: 0.5em !important;
  }
+
+code{
+	display: inline-block;
+	white-space: pre-wrap;
+    color: black;
+    background-color: @code-bg;
+	border: none;
+    border-radius: 5px;
+    padding: 0px 3px 3px 3px;
+}
+
+pre, .mw-code {
+	background-color: @pre-bg;
+    border-radius: 4px;
+}
 
 /* EditTools */
  .mw-editTools {
