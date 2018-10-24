@@ -72,13 +72,14 @@ a:active,
     font-family: "Alegreya Sans";
     font-weight: bold;
     a{
-		color: white;
-		background-color: lighten(@color-gray, 50);
+		color: lighten(@color-gray, 40);
+		background-color: transparent;
 		display: inline-block;
 		padding: 2px 4px 1px 4px;
 		border-radius: 3px;
 		letter-spacing: 0.1ex;
 		&:hover{
+			color: white;
 			background-color: @brand-primary;
 			text-decoration: none;
 		}
