@@ -2,7 +2,7 @@
 
 ```php
 
-## Default skin 
+## Default skin
 $wgDefaultSkin = 'chameleon';
 
 # Chameleon Overrides for BO
@@ -28,13 +28,13 @@ $egChameleonExternalLessVariables = [
 	'font-size-h1' => '22px',
 	'font-size-h2' => '20px',
 	'font-size-h3' => '18px',
-	'line-height-base' => '1.5', 
+	'line-height-base' => '1.5',
 	'navbar-margin-bottom' => '10px',
 	'navbar-default-bg' => 'rgba( 94, 157, 200, 1 )',
 	'navbar-default-border' => 'rgba( 94, 157, 200, 1 )',
 	'nav-tabs-active-link-hover-color' => 'rgba( 255, 255, 255, 1 )',
 	'input-border-focus' => 'rgba(0, 0, 0, .1)'
-	];
+];
 
 ```
 
