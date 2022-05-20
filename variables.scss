@@ -4,7 +4,6 @@
 // C - Thomas Park 2013
 // --------------------------------------------------
 
-
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -24,7 +23,6 @@ $brand-danger:          #FF0039;
 
 $color-link: $brand-primary;
 
-
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -40,7 +38,6 @@ $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
 //** Link hover decoration.
 $link-hover-decoration: underline;
-
 
 //== Typography
 //
@@ -85,7 +82,6 @@ $icon-font-path:          "../fonts/";
 $icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.
 $icon-font-svg-id:        "glyphicons_halflingsregular";
-
 
 //== Components
 //
