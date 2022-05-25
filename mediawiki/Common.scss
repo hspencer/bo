@@ -1,0 +1,154 @@
+/** 
+*    Casiopea -- Common.css 
+*    https://github.com/hspencer/bo
+*    
+*/
+
+/*------------------------------ navbar --------------------------*/
+
+.p-search .searchGoButton: last-child, .p-search .mw-searchButton: last-child {
+	border-right-color: #ced4da
+}
+.p-navbar .navbar-form button {
+	color: rgba(0,0,0,0.5);
+	color: rgba(55, 52, 52, 0.5);
+	border: 1px solid #1111112b;
+	border-radius: 2ex;
+	background-color: #00ffff70 !important
+}
+.input-group-append {
+	border-radius: 0 2ex 2ex 0
+}
+#searchInput {
+	border-radius: 0 0 2ex 2ex
+}
+.dropdown-toggle::after {
+	vertical-align: -0.5em;
+	color: rgba(0,0,0,0.25)
+}
+.p-navbar .navbar-brand img {
+	width: 8rem;
+	height: auto
+}
+.p-navbar {
+	background-color: #f8f5f0;
+	background-color: #684949
+}
+.form-control {
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	background-color: #060606;
+	border: 1px solid #454b51
+}
+.btn-light: hover, .p-search .searchGoButton: hover, .p-search .mw-searchButton: hover {
+	background-color: #ece4d6;
+	background-color: #4c4a45
+}
+.btn, .p-search .searchGoButton, .p-search .mw-searchButton, .mw-special-Search #mw-search-toggleall, .mw-special-Search #mw-search-togglenone, .mw-special-Search #smw-togglensview {
+	border: 1px solid transparent;
+	transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+	border: 1px solid #272625f7;
+	transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s cubic-bezier(.61,-0.03,.39,.99),box-shadow 0.15s ease-in-out
+}
+.input-group-append {
+	background-color: rgba(0, 0, 0, 0.25)
+}
+.navbar-light .navbar-nav .nav-link: hover, .p-navbar .navbar-nav .nav-link: hover, .navbar-light .navbar-nav .p-navbar .navbar-tool > a: hover, .p-navbar .navbar-light .navbar-nav .navbar-tool > a: hover, .p-navbar .navbar-nav .navbar-tool > a: hover, .navbar-light .navbar-nav .nav-link: focus, .p-navbar .navbar-nav .nav-link: focus, .navbar-light .navbar-nav .p-navbar .navbar-tool > a: focus, .p-navbar .navbar-light .navbar-nav .navbar-tool > a: focus, .p-navbar .navbar-nav .navbar-tool > a: focus {
+	color: #fff
+}
+.p-navbar {
+	background-color: #c4a1a1
+}
+
+
+/*------------------------------ editor --------------------------*/
+
+textarea, .mw-body #wpTextbox1 {
+	border: 1px solid rgba(0,0,0,0.15);
+	background-color: #F8F5F0;
+	font-family: monospace;
+	padding: 1ex;
+	font-size: .7rem
+}
+
+
+/* titles for all pages --------------------------------------------------------------------------- */
+.firstHeading {
+    border-bottom: 1px solid transparent;
+    margin-bottom: 0;
+    font-family: 'Alegreya Sans';
+    font-weight: 100;
+    padding-bottom: 1ex;
+    font-size: 3em;
+    word-break: normal;
+    hyphens: auto;
+}
+
+/* front page title ------------------------------------------------------------------------------- */
+
+.title-toggle {
+    font-family: 'Alegreya Sans';
+    color: #AE2900;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .2ex;
+}
+
+.title-toggle:hover{
+   color: #AE2900;
+}
+
+.link-toggle, link-toggle:hover{
+    color: #AE2900;
+}
+
+.link-toggle::after,
+.title-toggle::after{
+   color: #AE2900;
+   font-weight: lighter;
+   content: " +";
+}
+
+.title-toggle:focus::after,
+.link-toggle:focus::after{
+   content: " -";
+}
+
+#bodyContent p {
+    text-align: justify;
+}
+
+.columns{
+   box-sizing: border-box;
+   columns: 250px;
+   column-gap: 20px;
+}
+
+/* canvas para processingjs ---------------------------------------------------------------- */
+
+canvas{
+	max-width: 100% !important;
+	height: auto;
+	overflow: hidden;
+}
+
+.poem{
+	font-family: "Alegreya";
+        font-weight: 400;
+	font-size: .9em;
+        margin: 2em 0;
+}
+
+code{word-break: break-all}
+
+
+// ---------------------- Estilos generales
+
+iframe {
+    border: none;
+    border-radius: 4px;
+}
+
+.img{
+    border-radius: 4px;
+} 

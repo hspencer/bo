@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Modificado de Chameleon -> fixedhead.xml
+-->
+<structure xmlns="https://ProfessionalWiki.github.io/chameleon/schema/3.4/layout.rng">
+
+	<component type="NavbarHorizontal" class="navbar-dark bg-dark">
+		<modification type="Sticky"/>
+		<component type="NavMenu" flatten="navigation"/>
+		<component type="Logo" position="head"/>
+		<component type="Menu" message="secondary-menu"/>
+		<component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
+		<component type="SearchBar" class="order-first order-cmln-0" position="right" buttons="go"/>
+		<component type="PersonalTools" position="right"/>
+	</component>
+
+	<grid mode="fixedwidth">
+		<row>
+			<cell>
+                <component type="SiteNotice"/>
+				<component type="MainContent"/>
+			</cell>
+		</row>
+	</grid>
+
+	<grid class="mb-2 mt-4" mode="fixedwidth">
+		<row class="mx-3">
+			<cell>
+				<component type="FooterInfo"/>
+				<component type="NavbarHorizontal" collapsible="no" position="right" class="small" >
+					<component type="Toolbox" flatten="no" class="dropup"/>
+					<component type="LangLinks" flatten="no" class="dropup"/>
+				</component>
+			</cell>
+			<cell>
+				<component type="FooterPlaces" class="justify-content-end"/>
+				<component type="FooterIcons" class="justify-content-end mt-2 mb-0"/>
+			</cell>
+		</row>
+	</grid>
+</structure>

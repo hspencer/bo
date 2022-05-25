@@ -1,0 +1,22 @@
+/* Los estilos CSS colocados aquí afectarán la impresión */
+
+@page {
+    margin: 3cm;
+}
+
+/* esto agrega las URLs en los enlaces    -----*/
+a[href]:after{
+    font-size: 7pt;
+    font-family: $font-family-monospace;
+}
+
+.mw-body{
+    max-width: 75%;
+    font-size: 11pt;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    page-break-after: avoid;
+}
+

@@ -1,0 +1,25 @@
+// Bo
+//
+// Variables de Boostrap 4.6.1 
+// https://github.com/ProfessionalWiki/chameleon/blob/master/docs/variables.md
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 65rem
+) !default;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+$primary:       rgb(168, 50, 23);
+$link-color:    $primary;
+$code-color:    rgba(0, 0, 0, .35);
+
+// Typography
+$font-family-sans-serif:      "Alegreya Sans", sans-serif  !default;
+$font-family-serif:           Alegreya, Times, serif !default;
+$font-family-monospace:       "Roboto Mono", Menlo, Monaco, Consolas, monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
