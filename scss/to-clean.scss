@@ -1,168 +1,3 @@
-// bo - https://github.com/hspencer/bo
-// ISC - https://github.com/hspencer/bo/blob/master/COPYING
-// C - Herbert Spencer 2018
-// -----------------------------------------------------
-
-/* Colors */
-
-$color-white: 			#ffffff;
-$color-dark: 			#202020;
-$color-brown: 			#132029;
-$color-blue: 			#3e85b5;
-$color-dark-blue: 		#1A3C65;
-$color-pale: 			fade(#DCF0F7, 30%);
-$color-yellow-pale: 	#f7d96d;
-$color-yellow: 			#f3c624;
-$color-pink: 			#ff5656;
-$color-red: 			#f30000;
-$color-ocre: 			#725b06;
-$color-purple: 			#510e1c;
-$color-gray:			#656565;
-$navbar-bg:             #202020;
-$footer-bg: 			fade($navbar-bg, 10%);
-
-
-$navbar-default-bg: $navbar-bg;
-$nav-tabs-active-link-hover-color: $color-white;
-
-$btn-default-bg: $color-dark;
-$btn-default-border: $btn-default-bg;
-
-$btn-default-focus-bg: $color-blue;
-$btn-default-focus-border: $btn-default-focus-bg;
-
-$btn-default-visited-bg: $color-dark-blue;
-$btn-default-visited-border: $btn-default-visited-bg;
-
-$footer-height: 200px;
-
-/**
- * general
- */
-
-/* enforce a minimum height on every screen */
- html {
- 	position: relative;
- 	min-height: 100%;
- }
-
- body {
- 	/* Margin bottom by footer height see also ".smwofootergrid.container" */
- 	/* margin-bottom: $footer-height; */
- }
-
-a:active,
-.mw-body a.external:active {
- 	color: lighten($link-color, 20)
- }
-
-/* fix gap between header and content */
- .contentHeader {
- 	margin: 0 0 0.5em;
- 	border-bottom: 0;
- 	padding-bottom: 0;
- }
-
-/* edit section link */
-.mw-editsection{
-	font-size: 12px;
-    text-transform: uppercase;
-    font-family: "Alegreya Sans";
-    font-weight: bold;
-    a{
-		color: lighten($color-gray, 40);
-		background-color: transparent;
-		display: inline-block;
-		padding: 2px 4px 1px 4px;
-		border-radius: 3px;
-		letter-spacing: 0.1ex;
-		&:hover{
-			color: white;
-			background-color: $brand-primary;
-			text-decoration: none;
-		}
-	}
-	.mw-editsection-bracket{display: none}
-	
-}
-/* Headings */
-
- h1{letter-spacing: -0.02ex; font-weight: 500}
- h2{font-weight: 500}
- h3{font-weight: 700}
- h4, h5, h6{font-family: $font-family-sans-serif}
- h4{font-weight: 800}
- h5{text-transform: uppercase; font-weight: 700; letter-spacing: 0.1ex }
- h6{text-transform: uppercase; font-weight: 500; letter-spacing: 0.1ex}
-
-
-/* horizontal lines */
- hr {
- 	margin-top: 10px;
- 	margin-bottom: 10px;
- }
-
-/* floating */
- .float-left {
- 	float: left;
- }
-
- .float-right {
- 	float: right;
- }
-
-/* table of contents */
-
- #toc,
- .toc {
- 	h2 {
- 		display: none;
- 	}
- 	#toctitle,
- 	.toctitle {
- 		text-align: left !important;
- 	}
- 	.toctoggle {
- 		text-align: right !important;
- 	}
- }
-
- #preftoc > li.selected > a {
- 	&,
- 	&:hover,
- 	&:focus {
- 		color: $color-pale;
- 	}
- }
-
-/* Content */
-#mw-content-text{
-	ul {
-	    margin-block-end: 1em;
-	}	
-}
-
-/* pre */
- div.smwpre {
- 	padding: 0.5em !important;
- }
-
-code{
-	display: inline-block;
-	white-space: pre-wrap;
-    color: black;
-    background-color: $code-bg;
-	border: none;
-    border-radius: 5px;
-    padding: 0px 3px 3px 3px;
-    line-height: 130%;
-}
-
-pre, .mw-code {
-	background-color: $pre-bg;
-    border-radius: 4px;
-}
-
 /* EditTools */
  .mw-editTools {
  	font-size: smaller;
@@ -175,6 +10,7 @@ pre, .mw-code {
  }
 
 /* header cell of configuration parameter template */
+
  table a:not(.btn),
  .table a:not(.btn) {
  	text-decoration: none;
@@ -315,17 +151,8 @@ pre, .mw-code {
  	}
  }
 
-/* Links */
-
- a.new{
- 	&:link,
- 	&:hover,
- 	&:visited{
- 		color: $color-gray;
- 	}
- }
-
 /* Document management specific changes */
+
  .dropdown-content.document-draft {
  	border-top: 5px solid $color-yellow;
  }
@@ -334,6 +161,7 @@ pre, .mw-code {
  }
 
 /* Special:Ask buttons */
+
  .smw-ask-action-btn-lblue {
  	color: $color-white !important;
  	background-color: $navbar-default-bg !important;
@@ -387,8 +215,6 @@ pre, .mw-code {
 /**
  * navbar
  */
-
-
 
 
  .navbar-default .navbar-nav > li > a {
@@ -737,15 +563,6 @@ pre, .mw-code {
 	}
 }
 
-/* Content */
-
-#mw-content-text{
-
-	p{
-		@include word-wrap();
-	}
-}
-
 /* Footer */
 
 .footerwrap{
@@ -1002,7 +819,7 @@ pre, .mw-code {
  div.gallerytext {
  	overflow: hidden;
  	font-size: 83%;
- 	padding: 1ex 2ex 0 @include 45ex;
+ 	padding: 1ex 2ex 0 45ex;
  	word-wrap: break-word;
  	line-height: 2.5ex;
  	font-style: italic;
@@ -1135,7 +952,7 @@ pre, .mw-code {
 
  @media print {
 
- 	$page {
+ 	@page {
  		margin: 52pt;
  	}
 
@@ -1168,51 +985,5 @@ pre, .mw-code {
 	padding: 0 2em;
 	.list-inline.pull-right.footer-icons a img{
 		margin-bottom: 25px;
-	}
-}
-
-/* forms */
-
-table.formtable{
-	tbody{
-		tr{
-			th{
-				font-weight: bold !important;
-				vertical-align: middle;
-				text-align: right;
-				letter-spacing: -@include 02ex;
-				color: black;
-			}
-
-			td{
-				.checkboxesSpan{
-					label.checkboxLabel{
-						display: inline-block;
-						font-size: 75%;
-						font-weight: normal;
-						margin: 0 1em 0 0;
-					    min-width: 30%;
-					}
-				}
-
-				.inputSpan{
-					.pfUploadable{
-					    color: white;
-					    background-color: $gray-light;
-					    padding: 0.7ex 1.5ex;
-					    text-transform: uppercase;
-					    font-size: 80%;
-					    border-radius: 4px;
-					    border: 1px solid transparent;
-					    margin: 0 0 0 1ex;
-					    font-weight: bold;
-
-					    &:hover{
-					    	background-color: $brand-primary
-					    }
-					}
-				}
-			}
-		}
 	}
 }

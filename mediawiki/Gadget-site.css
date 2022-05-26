@@ -390,36 +390,7 @@ a.image > img {
 
 /* Utilidades ----------------------------------------------------------------------- */
 
-.mt{margin-top: 1em}
-.mb{margin-bottom: 1em}
 
-/* Responsive Video 
-   Based on https://github.com/niklausgerber/FitMyVideo 
-*/
-
-.video-container {
-  max-width: 100%;
-  margin: auto;
-}
-
-.flexible-container {
-   position: relative;
-   padding-bottom: 56.25%;
-   padding-top: 30px;
-   height: 0;
-   overflow: hidden;
-}
-
-.flexible-container iframe,   
-.flexible-container object,
-.flexible-container video, /* for html5 video embeds */
-.flexible-container embed {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-}
 
 
 
@@ -537,3 +508,197 @@ input[type="checkbox"]{margin-right: 5px}
 
 /* utilidades ------------------------------------------- */
 
+/* Tablas -------------------------------------------------------------------------------------- */
+
+table.smwtable, table.wikitable{
+   font-size: 95%;
+   margin: 1em auto;
+}
+
+table.wikitable tr td,
+table.wikitable tr th{
+   vertical-align: top;
+}
+
+table.plantilla{
+font-size: 95%;
+padding: 1em !important;
+margin: 2em auto;
+line-height: 120%;
+border: none;
+border-radius: 6px;
+}
+
+table.plantilla tbody tr{
+vertical-align: top;
+}
+
+table.chronogram tbody tr th,
+table.chronogram tbody tr td{
+   border-top: 1px solid rgba(0, 0, 0, .2) !important;
+   font-size: 13px;
+   vertical-align: top;
+}
+
+table.plantilla tbody tr th {
+text-align: right;
+min-width: 110px;
+width: 20%;
+padding: 2px 1.5ex 0 0;
+color: rgba(0, 0, 0, .5);
+font-weight: normal;
+text-transform: uppercase;
+font-size: 10px;
+letter-spacing: 0.03ex;
+background-color: transparent;
+color: rgba(0,0,0,0.3);
+font-weight: bold;
+}
+
+table.at {
+border-top: 1px solid #CCC;
+width: 100%;
+}
+
+table.at tbody tr{
+display: block;
+border-bottom: 1px solid #CCC;
+}
+
+table.formtable{
+border-collapse: collapse;
+border: none;
+}
+
+table.formtable tbody tr th{
+text-align: right;
+padding: 0 1.5ex 0 0;
+color: #555;
+font-weight: normal;
+font-size: 85%;
+white-space: nowrap;
+
+} 
+
+table.formtable tbody tr th,
+table.formtable tbody tr td{
+padding: 5px;
+line-height: 110%;
+vertical-align: top;
+} 
+
+table.competencias{
+margin: 0 0 0 2em;
+border: none;
+border-collapse: collapse;
+}
+
+table.competencias tbody tr th{
+letter-spacing: normal;
+text-transform: uppercase;
+padding: 1.5em 0 1.5em 0;
+color: #b3b3b3;
+}
+
+table.competencias tbody tr td {
+background-color: transparent;
+vertical-align: top;
+padding: 1em;
+}
+
+table.competencias tbody tr td ul{
+padding-top: 0;
+margin-top: 0;
+}
+
+table.competencias tbody tr{
+border-bottom: 1px solid #CCC !important;
+}
+
+table.competencias tbody tr:last-child{
+border-bottom: 1px solid transparent !important;
+}
+
+table.competencias tbody tr th, table.competencias tbody tr td{
+background: transparent;
+}
+
+table.malla tbody tr td{
+font-size: 13px;
+vertical-align: top !important;
+}
+
+table.malla tbody tr td ul{
+padding: 0 0 2em 0;
+}
+
+table.malla tbody tr td ul ul{
+padding: 0;
+}
+
+table.malla tbody td.year{
+padding: 0;
+color: #c00;
+text-transform: uppercase;
+font-size: 0.8em;
+font-weight: bold;
+letter-spacing: -.06ex;
+}
+
+table.malla tbody tr th{
+color: #CCC;
+font-size: 1.3em;
+font-weight: normal;
+text-transform: uppercase;
+padding: 2em 0 1em;
+}
+
+table.nucleares {
+font-size: 10pt;
+}
+table.nucleares tr{
+border-top: 2px solic black;
+}
+
+table.nucleares td ul{
+margin: 0 0 0 -2em;
+}
+table.nucleares td,
+
+table.nucleares td ul li, {
+vertical-align: top;
+list-style: none;
+}
+
+td.Créditos{
+text-align: center;
+}
+
+td.Clave{
+font-weight: bold;
+font-family: Consolas, monospace;
+}
+
+td.Bibliografía,
+td.Competencias-Fundamentales,
+td.Competencias-Disciplinares,
+td.Competencias-Profesionales{
+vertical-align: top;
+font-size: .8em;
+line-height: 1.1em;
+}
+
+td.Bibliografía hr,
+td.Competencias-Fundamentales hr,
+td.Competencias-Disciplinares hr,
+td.Competencias-Profesionales hr{
+margin: 3px 0;
+border-color: #CCC;
+}
+.ficha{
+border-collapse: collapse;
+}
+
+.bio, td.bio{
+font:italic normal 85%/111% ;
+}

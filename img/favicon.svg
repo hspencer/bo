@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg833"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   inkscape:export-filename="/Users/hspencer/Sites/ead-casiopea/htdocs/images/favicon.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
+  <metadata
+     id="metadata839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs837">
+    <rect
+       x="179.81471"
+       y="49.583458"
+       width="179.21732"
+       height="82.439964"
+       id="rect896" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1695"
+       x="-0.029511038"
+       width="1.0590221"
+       y="-0.038756263"
+       height="1.0775125">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.1081351"
+         id="feGaussianBlur1697" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="872"
+     id="namedview835"
+     showgrid="false"
+     inkscape:zoom="0.59615588"
+     inkscape:cx="166.37753"
+     inkscape:cy="283.51009"
+     inkscape:window-x="0"
+     inkscape:window-y="208"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g841"
+     inkscape:document-rotation="0"
+     inkscape:snap-page="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g841">
+    <text
+       xml:space="preserve"
+       id="text894"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'System Font';-inkscape-font-specification:'System Font';white-space:pre;shape-inside:url(#rect896);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(-8)"><tspan
+         style="visibility:hidden"
+         x="179.81445"
+         y="169.85926"><tspan
+           dx="0 27.421875 25.390625 23.75 8.984375 29.296875 23.125 22.109375"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'System Font';-inkscape-font-specification:'System Font'">CASIOPEA</tspan></tspan></text>
+    <g
+       id="g1712"
+       transform="translate(-4.1275959,-6.4065275)">
+      <rect
+         style="fill:#1a1a1a;fill-opacity:0.775801;stroke:none;stroke-width:4.38851;stroke-opacity:1"
+         id="rect878"
+         width="510"
+         height="510"
+         x="5.1275959"
+         y="7.4065275"
+         rx="44.347828"
+         ry="45.671646" />
+      <g
+         id="g1681"
+         style="filter:url(#filter1695)"
+         transform="matrix(4.3244268,0,0,4.4535143,-17.046317,-25.578548)">
+        <circle
+           style="fill:#000000;fill-opacity:0.66;stroke-width:1.31476"
+           id="path1059"
+           cx="27.135221"
+           cy="37.505978"
+           r="4.1185031" />
+        <circle
+           style="fill:#000000;fill-opacity:0.66;stroke-width:1.44894"
+           id="path1059-3"
+           cx="43.2383"
+           cy="67.514137"
+           r="4.5388331" />
+        <circle
+           style="fill:#000000;fill-opacity:0.66;stroke-width:1.44894"
+           id="path1059-2"
+           cx="68.050591"
+           cy="68.119316"
+           r="4.5388331" />
+        <circle
+           style="fill:#000000;fill-opacity:0.66;stroke-width:1.44894"
+           id="path1059-4"
+           cx="80.759323"
+           cy="97.470428"
+           r="4.5388331" />
+        <circle
+           style="fill:#000000;fill-opacity:0.66;stroke-width:1.44894"
+           id="path1059-30"
+           cx="108.59753"
+           cy="78.407333"
+           r="4.5388331" />
+      </g>
+      <path
+         style="mix-blend-mode:normal;fill:none;stroke:#ffffff;stroke-width:4.38851;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 83.844194,124.47398 69.611916,136.02699 105.31035,-1.83821 53.54761,136.02699 119.58975,-90.07193"
+         id="path858" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.97955;stroke:none;stroke-width:5.76982;stroke-opacity:1"
+         id="path1059-9"
+         cx="81.894104"
+         cy="123.72442"
+         rx="17.810165"
+         ry="18.341812" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.97955;stroke:none;stroke-width:6.35866;stroke-opacity:1"
+         id="path1059-3-0"
+         cx="149.6525"
+         cy="255.55666"
+         rx="19.627851"
+         ry="20.213757" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.97955;stroke:none;stroke-width:6.35866;stroke-opacity:1"
+         id="path1059-2-6"
+         cx="256.95135"
+         cy="258.25186"
+         rx="19.627851"
+         ry="20.213757" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.97955;stroke:none;stroke-width:6.35866;stroke-opacity:1"
+         id="path1059-4-6"
+         cx="311.90933"
+         cy="388.96747"
+         rx="19.627851"
+         ry="20.213757" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.97955;stroke:none;stroke-width:6.35866;stroke-opacity:1"
+         id="path1059-30-5"
+         cx="432.29355"
+         cy="304.06967"
+         rx="19.627851"
+         ry="20.213757" />
+    </g>
+  </g>
+</svg>

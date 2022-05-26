@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg833"
+   width="554"
+   height="178"
+   viewBox="0 0 554 178"
+   sodipodi:docname="casiopea-header.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   inkscape:export-filename="/Users/hspencer/Sites/ead-casiopea/htdocs/skins/bo/img/casiopea-header.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
+  <metadata
+     id="metadata839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs837">
+    <rect
+       x="179.81471"
+       y="49.583458"
+       width="179.21732"
+       height="82.439966"
+       id="rect896" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="847"
+     id="namedview835"
+     showgrid="false"
+     inkscape:zoom="0.87760425"
+     inkscape:cx="188.18489"
+     inkscape:cy="32.596141"
+     inkscape:window-x="0"
+     inkscape:window-y="205"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g841"
+     inkscape:document-rotation="0" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g841">
+    <text
+       xml:space="preserve"
+       id="text894"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'System Font';-inkscape-font-specification:'System Font';white-space:pre;shape-inside:url(#rect896);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(-8)"><tspan
+         style="visibility:hidden"
+         x="179.81445"
+         y="169.85926"><tspan
+           dx="0 27.421875 25.390625 23.75 8.984375 29.296875 23.125 22.109375"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'System Font';-inkscape-font-specification:'System Font'">CASIOPEA</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:75.3639px;line-height:1.25;font-family:'System Font';-inkscape-font-specification:'System Font';letter-spacing:0.153083px;word-spacing:0.153083px;fill:#000000;fill-opacity:0.66;stroke:none;stroke-width:1.17756"
+       x="234.02194"
+       y="116.23003"
+       id="text902"
+       transform="scale(0.95787789,1.0439744)"><tspan
+         sodipodi:role="line"
+         id="tspan900"
+         x="234.02194"
+         y="116.23003"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:75.3639px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans Heavy';fill:#000000;fill-opacity:0.66;stroke-width:1.17756"
+         dx="0.51812655">CASIOPEA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:75.3639px;line-height:1.25;font-family:'System Font';-inkscape-font-specification:'System Font';letter-spacing:0.153083px;word-spacing:0.153083px;fill:#ffffff;fill-opacity:0.973415;stroke:none;stroke-width:1.17756"
+       x="227.15482"
+       y="112.47643"
+       id="text902-1"
+       transform="scale(0.95787789,1.0439744)"><tspan
+         sodipodi:role="line"
+         id="tspan900-0"
+         x="227.15482"
+         y="112.47643"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:75.3639px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans Heavy';fill:#ffffff;fill-opacity:0.973415;stroke-width:1.17756"
+         dx="0.51812655">CASIOPEA</tspan></text>
+    <circle
+       style="fill:#000000;fill-opacity:0.66;stroke-width:1.81479"
+       id="path1059"
+       cx="36.01749"
+       cy="52.55088"
+       r="5.684866" />
+    <circle
+       style="fill:#000000;fill-opacity:0.66;stroke-width:2"
+       id="path1059-3"
+       cx="58.244949"
+       cy="93.971848"
+       r="6.2650571" />
+    <circle
+       style="fill:#000000;fill-opacity:0.66;stroke-width:2"
+       id="path1059-2"
+       cx="92.493927"
+       cy="94.80719"
+       r="6.2650571" />
+    <circle
+       style="fill:#000000;fill-opacity:0.66;stroke-width:2"
+       id="path1059-4"
+       cx="110.03609"
+       cy="135.32121"
+       r="6.2650571" />
+    <circle
+       style="fill:#000000;fill-opacity:0.66;stroke-width:2"
+       id="path1059-30"
+       cx="148.46179"
+       cy="109.00798"
+       r="6.2650571" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 30.765576,47.287829 22.219582,42.160234 33.61424,-0.569733 17.091982,42.16023 38.17211,-27.91691"
+       id="path858" />
+    <circle
+       style="fill:#ffffff;fill-opacity:0.97955;stroke-width:1.81479;stroke:none;stroke-opacity:1"
+       id="path1059-9"
+       cx="30.143122"
+       cy="47.055508"
+       r="5.684866" />
+    <circle
+       style="fill:#ffffff;fill-opacity:0.97955;stroke-width:2;stroke:none;stroke-opacity:1"
+       id="path1059-3-0"
+       cx="51.771072"
+       cy="87.915619"
+       r="6.2650571" />
+    <circle
+       style="fill:#ffffff;fill-opacity:0.97955;stroke-width:2;stroke:none;stroke-opacity:1"
+       id="path1059-2-6"
+       cx="86.020035"
+       cy="88.750977"
+       r="6.2650571" />
+    <circle
+       style="fill:#ffffff;fill-opacity:0.97955;stroke-width:2;stroke:none;stroke-opacity:1"
+       id="path1059-4-6"
+       cx="103.56219"
+       cy="129.265"
+       r="6.2650571" />
+    <circle
+       style="fill:#ffffff;fill-opacity:0.97955;stroke-width:2;stroke:none;stroke-opacity:1"
+       id="path1059-30-5"
+       cx="141.98788"
+       cy="102.95177"
+       r="6.2650571" />
+  </g>
+</svg>

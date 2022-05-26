@@ -7,4 +7,30 @@
 
 To use this flavour on your wiki you will have to install the [MediaWiki Chameleon skin](https://www.mediawiki.org/wiki/Skin:Chameleon) first and clone this repo in the "skins" directory of your wiki.
 
-For making it work you need to modify your  "LocalSettings.php" [as follows](/LocalSettings.md/).
+For making it work you need to modify your  "LocalSettings.php" as follows:
+
+```
+# - SKINS
+wfLoadSkin( 'chameleon' );
+
+# -- BO SETTINGS
+
+## --------------------------------------------- layout ---------------------------------------------
+
+$egChameleonLayoutFile= '/var/www/casiopea/htdocs/skins/bo/layouts/layout-2022.xml';
+# $egChameleonLayoutFile =  __DIR__ . + '/skins/bo/layout-tools.xml'; // esto no sirve!?
+
+
+## --------------------------------------------- theme  ---------------------------------------------
+
+# $egChameleonThemeFile = ''; // empty restores bootstrap's default
+$egChameleonThemeFile  = '/var/www/casiopea/htdocs/skins/bo/scss/bo-riables.scss';
+
+
+## --------------------------------------------- bo     ---------------------------------------------
+
+$egChameleonExternalStyleModules = [
+    '/var/www/casiopea/htdocs/skins/bo/scss/bo.scss' => 'afterFunctions'
+];
+
+```
