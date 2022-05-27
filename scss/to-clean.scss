@@ -987,3 +987,862 @@
 		margin-bottom: 25px;
 	}
 }
+
+
+/* Ayuda del Editor ----------------------------------------------------------------------- */
+
+#wikiEditor-section-characters,
+#wikiEditor-section-help {
+   font-size: 80%;
+}
+#wikiEditor-section-help .cell-syntax {
+   font-size: 75%;
+}
+
+
+input[type="checkbox"]{margin-right: 5px}
+
+.wikiEditor-ui-toolbar .page-characters div span {
+   padding: 5px;
+   display: inline-block;
+   height: 32px;
+   border-radius: .25ex;
+}
+.mapboxgl-canvas-container{
+   overflow: hidden;
+}
+
+
+/* utilidades ------------------------------------------- */
+
+
+
+/* titles for all pages --------------------------------------------------------------------------- */
+.firstHeading {
+    border-bottom: 1px solid transparent;
+    margin-bottom: 0;
+    font-family: 'Alegreya Sans';
+    font-weight: 100;
+    padding-bottom: 1ex;
+    font-size: 3em;
+    word-break: normal;
+    hyphens: auto;
+}
+
+/* front page title ------------------------------------------------------------------------------- */
+
+.title-toggle {
+    font-family: 'Alegreya Sans';
+    color: #AE2900;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .2ex;
+}
+
+.title-toggle:hover{
+   color: #AE2900;
+}
+
+.link-toggle, link-toggle:hover{
+    color: #AE2900;
+}
+
+.link-toggle::after,
+.title-toggle::after{
+   color: #AE2900;
+   font-weight: lighter;
+   content: " +";
+}
+
+.title-toggle:focus::after,
+.link-toggle:focus::after{
+   content: " -";
+}
+
+#bodyContent p {
+  text-align: justify;
+}
+
+
+
+.columns{
+   box-sizing: border-box;
+   columns: 250px;
+   column-gap: 20px;
+}
+
+/* canvas para processingjs ---------------------------------------------------------------- */
+
+canvas{
+	max-width: 100% !important;
+	height: auto;
+	overflow: hidden;
+}
+
+.poem{
+	font-family: "Alegreya";
+        font-weight: 400;
+	font-size: .9em;
+        margin: 2em 0;
+}
+
+code{word-break: break-all}
+
+/* Tablas -------------------------------------------------------------------------------------- */
+
+table.smwtable, table.wikitable{
+        font-size: 95%;
+        margin: 1em auto;
+}
+
+table.wikitable tr td,
+table.wikitable tr th{
+        vertical-align: top;
+}
+
+table.plantilla{
+	font-size: 95%;
+	padding: 1em !important;
+	margin: 2em auto;
+	line-height: 120%;
+	border: none;
+	border-radius: 6px;
+}
+
+table.plantilla tbody tr{
+	vertical-align: top;
+}
+
+table.chronogram tbody tr th,
+table.chronogram tbody tr td{
+        border-top: 1px solid rgba(0, 0, 0, .2) !important;
+        font-size: 13px;
+        vertical-align: top;
+}
+
+table.plantilla tbody tr th {
+	text-align: right;
+	min-width: 110px;
+	width: 20%;
+	padding: 2px 1.5ex 0 0;
+	color: rgba(0, 0, 0, .5);
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 0.03ex;
+	background-color: transparent;
+	color: rgba(0,0,0,0.3);
+	font-weight: bold;
+}
+
+table.at {
+	border-top: 1px solid #CCC;
+	width: 100%;
+}
+
+table.at tbody tr{
+	display: block;
+	border-bottom: 1px solid #CCC;
+}
+
+table.formtable{
+	border-collapse: collapse;
+	border: none;
+}
+
+table.formtable tbody tr th{
+	text-align: right;
+	padding: 0 1.5ex 0 0;
+	color: #555;
+	font-weight: normal;
+	font-size: 85%;
+	white-space: nowrap;
+
+} 
+
+table.formtable tbody tr th,
+table.formtable tbody tr td{
+	padding: 5px;
+	line-height: 110%;
+	vertical-align: top;
+} 
+
+table.competencias{
+	margin: 0 0 0 2em;
+	border: none;
+	border-collapse: collapse;
+}
+
+table.competencias tbody tr th{
+	letter-spacing: normal;
+	text-transform: uppercase;
+	padding: 1.5em 0 1.5em 0;
+	color: #b3b3b3;
+}
+
+table.competencias tbody tr td {
+	background-color: transparent;
+	vertical-align: top;
+	padding: 1em;
+}
+
+table.competencias tbody tr td ul{
+	padding-top: 0;
+	margin-top: 0;
+}
+
+table.competencias tbody tr{
+	border-bottom: 1px solid #CCC !important;
+}
+
+table.competencias tbody tr:last-child{
+	border-bottom: 1px solid transparent !important;
+}
+
+table.competencias tbody tr th, table.competencias tbody tr td{
+	background: transparent;
+}
+
+table.malla tbody tr td{
+	font-size: 13px;
+	vertical-align: top !important;
+}
+
+table.malla tbody tr td ul{
+	padding: 0 0 2em 0;
+}
+
+table.malla tbody tr td ul ul{
+	padding: 0;
+}
+
+table.malla tbody td.year{
+	padding: 0;
+	color: #c00;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: bold;
+	letter-spacing: -.06ex;
+}
+
+table.malla tbody tr th{
+	color: #CCC;
+	font-size: 1.3em;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 2em 0 1em;
+}
+
+table.nucleares {
+	font-size: 10pt;
+}
+table.nucleares tr{
+	border-top: 2px solic black;
+}
+
+table.nucleares td ul{
+	margin: 0 0 0 -2em;
+}
+table.nucleares td,
+
+table.nucleares td ul li, {
+	vertical-align: top;
+	list-style: none;
+}
+
+td.Créditos{
+	text-align: center;
+}
+
+td.Clave{
+	font-weight: bold;
+	font-family: Consolas, monospace;
+}
+
+td.Bibliografía,
+td.Competencias-Fundamentales,
+td.Competencias-Disciplinares,
+td.Competencias-Profesionales{
+	vertical-align: top;
+	font-size: .8em;
+	line-height: 1.1em;
+}
+
+td.Bibliografía hr,
+td.Competencias-Fundamentales hr,
+td.Competencias-Disciplinares hr,
+td.Competencias-Profesionales hr{
+	margin: 3px 0;
+	border-color: #CCC;
+}
+.ficha{
+	border-collapse: collapse;
+}
+
+.bio, td.bio{
+	font:italic normal 85%/111% ;
+}
+
+/* ajustes para asignaturas ---------------------------------------------------------------------------- */
+
+.clave{
+   font-family: Consolas, monospace;
+   font-size: 90%;
+   display: inline-block;
+   padding: 2px 4px 0 4px;
+   margin: 0 3px 3px 0;
+   color: #FFF;
+   background-color: #000;
+   border-radius: 2px
+}
+
+td.nombre{
+	padding: 1em !important;
+	font-weight: 900;
+	font-size: 26px;
+	height: 34px;
+	line-height: 100%;
+}
+
+.asignaturas,
+.profesor{
+   display: inline-block;
+   /* padding: 0 3px; */
+   border-radius: 2px
+}
+.asignaturas::after,
+.profesor::after{
+	content: ", ";
+}
+
+.asignaturas:last-of-type::after,
+.profesor:last-of-type::after{
+	content: "";
+}
+
+/* tabla malla nueva, tabla de colores para asignaturas ---------------------------------------------- */
+
+table.malla-nueva tr th,
+table.malla-nueva tr td{
+	vertical-align: top;
+}
+
+table.malla-nueva tr th{
+	padding: 1ex;
+}
+
+table.malla-nueva tr td{
+	padding: 0;
+}
+
+table.programa tr td, table.programa tr th{
+       padding: 1ex;
+       vertical-align: top;
+}
+/* Ficha Asignatura: es una plantilla que se utiliza como Template para resultados semánticos */
+
+.ficha-asignatura{
+	display: block;
+	padding: 1ex;
+}
+
+.ficha-asignatura:hover{
+	background-color: #FFF;
+}
+
+.ficha-asignatura .clave,
+.ficha-asignatura .creditos{
+	margin: 0;
+	font-weight: bolder;
+	font-size: 10px;
+	line-height: 1.1em;
+}
+
+.ficha-asignatura .clave{
+	padding: .5ex;
+}
+
+.ficha-asignatura .creditos{
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.516ex 1.2ex 0.4ex 1.2ex;
+	border-radius: 10px;
+}
+
+.Optativa{background-color: #008040 !important;}
+.Obligatoria{background-color: #b30000 !important;}
+
+.ficha-asignatura .nombre-asignatura a{
+	display: inline-block;
+	clear: both;
+	font-size: 14px;
+	padding: .5ex;
+	font-weight: 700 !important;
+	line-height: 100% important;
+}
+
+.ficha-asignatura .nombre-asignatura a:hover{
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* vcard para Plantilla: Personas ------------------------------------------------------------------ */
+
+.vcard{
+	text-align: center;
+}
+
+.vcard .person-name{
+	display: inline-block;
+	margin: 1ex 0px;
+	font-size: 1.5em;
+	letter-spacing: -0.03ex;
+	color: black;
+	font-weight: bold;
+}
+.vcard .titulo p,
+.vcard .titulo .bio, 
+.vcard .titulo .url{
+	font-size: .8 120%;
+	font-style: italic;
+	text-align: center;
+}
+
+img.img-circle{
+     border-radius: 50% !important;
+}
+
+.vcard a.image > img{
+     height: 200px !important;
+}
+
+/* para la Plantilla: Listado de Profesores -------------------------------------------------------- */
+
+.listado-profesores .nombre a{
+	font-weight: 300;
+}
+
+.listado-profesores small{
+	display: block;
+	line-height: 120%;
+	margin: 0px 0px 1em;
+	font-size: 80%;
+	font-weight: 400;
+}
+
+/* para la Plantilla: Ficha Personal --------------------------------------------------------------- */
+
+.ficha-personal{
+	display: inline-block;
+	min-height: 200px !important;
+}
+
+.ficha-personal .foto{
+	width: 150px;
+	float: left;
+	border-radius: 50%;
+}
+
+.ficha-personal .title h3{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.ficha-personal .title .bio{
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 110%;
+}
+
+.gray{
+       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+       filter: grayscale(100%);
+}
+
+/* tabla malla nueva, tabla de colores para asignaturas ---------------------------------------------- */
+
+table.malla-nueva tr th,
+table.malla-nueva tr td{
+	vertical-align: top;
+}
+
+table.malla-nueva tr th{
+	padding: 1ex;
+}
+
+table.malla-nueva tr td{
+	padding: 0;
+}
+
+/* Ficha Asignatura: es una plantilla que se utiliza como Template para resultados semánticos */
+
+.ficha-asignatura{
+	display: block;
+	padding: 1ex;
+}
+
+.ficha-asignatura:hover{
+	background-color: #FFF;
+}
+
+.ficha-asignatura .clave,
+.ficha-asignatura .creditos{
+	float: left;
+	color: #5C5C5C;
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	font-weight: bolder;
+	font-size: 10px;
+	border: 1px solid transparent;
+}
+
+.ficha-asignatura .clave{
+	padding: .5ex;
+}
+
+.ficha-asignatura .creditos{
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.6ex 1.2ex 0.4ex 1.2ex;
+	border-radius: 10px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.ficha-asignatura .nombre-asignatura a{
+	display: block;
+	clear: both;
+	font-size: 14px;
+	padding: .5ex;
+	line-height: 110%;
+}
+
+.ficha-asignatura .nombre-asignatura a:hover{
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* Semantic Media Wiki ----------------------------------------------------------------------- */
+
+.aviso,
+.mw-warning-with-logexcerpt,
+.smw-editpage-help {
+    background-color: #fcfada;
+    border: 3px solid rgba(0,0,0,.05) !important;
+    padding: .3em 1em 0.5em 1em;
+    margin-bottom: 2em !important;
+    border-radius: 4px;
+    line-height: 150%;
+    font-weight: normal;
+}
+
+.nota{
+    font-size: 80%;
+    line-height: 136%;
+    font-style: italic;
+    padding: 1ex 1em;
+    background-color: #fffded;
+    margin: 1em 0 1em 30%;
+    border-radius: 4px;
+}
+
+.estrofa{
+        background-color: #F5F5F5;
+        min-height: 350px;
+        padding: 1ex;
+        background: -moz-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(245,245,245,0) 100%);
+        background: -webkit-linear-gradient(top,  rgba(245,245,245,1) 0%,rgba(245,245,245,0) 100%);
+        background: linear-gradient(to bottom,  rgba(245,245,245,1) 0%,rgba(245,245,245,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#00f5f5f5',GradientType=0 );
+}
+.estrofa span{display: inline-block; border:1px solid rgba(0,0,0,.2); padding: 0 1ex; margin: 0 3px 3px 0; border-radius: 3px}
+.estrofa span:nth-child(1){font-size: 3em; display:block; line-height:140%; border: none}
+.estrofa span:nth-child(2){font-size: 2em; display:block; line-height:140%; border: none}
+
+/* Botones para la Wiki, span con un link interior -------------------------------------------- */
+
+.wiki-btn {
+display: inline-block;
+padding: auto;
+border-radius: 5px;
+border: .8px solid #8d210073;
+background-color: white;
+white-space: nowrap;
+transition: color .2s, background-color .4s, border .1s !important;
+}
+
+.wiki-btn:hover {
+border-color: #0000001e;
+background-color: #8d2100;
+color: white !important;
+}
+
+.wiki-btn > a {
+text-transform: uppercase;
+font-size: 80%;
+letter-spacing: .1ex;
+display: inline-block !important;
+padding: .1ex 1.2ex;
+font-weight: 700 !important;
+text-decoration: none;
+white-space: nowrap;
+}
+
+.wiki-btn > a:hover,
+.wiki-btn > a:focus {
+color: #fff !important;
+}
+
+.wiki-btn.red,
+.wiki-btn.green,
+.wiki-btn.blue{
+    border-color: rgba(0, 0, 0, 0.24);
+
+}
+
+.wiki-btn.red > a,
+.wiki-btn.green > a,
+.wiki-btn.blue > a{
+    color: white !important;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+}
+
+.wiki-btn.red {
+background-color: #ae2900;
+}
+
+.wiki-btn:hover.red {
+background-color: #8d2100;
+}
+
+.wiki-btn.green {
+background-color: #3b7e1d;
+}
+
+.wiki-btn:hover.green {
+background-color: #285712;
+}
+
+.wiki-btn.blue {
+background-color: #0577fa;
+}
+
+.wiki-btn:hover.blue {
+background-color: #10459b;
+}
+
+/* hack para evitar el espacio superior en las tablas de plantillas por 4 quiebres de línea que no sé de dónde vienen o por qué se generan. Hay que identificar la causa porque este hack puede perjudicar otros elementos no anticipados */
+
+#mw-content-text > p > br {
+    display: none;
+}
+
+.pdf-btn{float:right}
+.pdf-btn > a.external.text {
+    border: 1px solid #C00;
+    display: inline-block;
+    line-height: 100%;
+    padding: 2px 4px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 1emM
+}
+.pdf-btn > a.external.text:hover{
+    text-decoration: none;
+    color: white;
+    background-color:#C00;
+}
+
+/* estilos auxiliares ----------------------------------------------------------------------- */
+
+.mb{margin-bottom: 2em}
+img{height: auto !important}
+a.image > img {
+    margin: 1em 0;
+    border-radius: .5ex;
+}
+
+/* div para listar trababajos individuales */
+.listado{
+   display:inline-block;
+   vertical-align:top;
+   width: 30%;
+   min-width: 200px;
+   height: 300px;
+   overflow: scroll;
+   padding: 1ex 1em;
+   margin: .5em;
+   border: 1px solid #EEE;
+   box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+   border-radius: 5px;
+}
+
+/* licencias para archivos ----------------------------------------------------------------------- */
+
+.licence{
+   padding: 1em 2ex;
+   border: 1px solid #EEE;
+   border-radius: 1ex;
+   font-size: 75%;
+   line-height: 120%;
+}
+
+.licence .image{
+   float: left;
+   display: inline-block;
+   margin-right: 1em;
+}
+
+.clearfix {overflow: auto;}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Utilidades ----------------------------------------------------------------------- */
+
+.mt{margin-top: 1em}
+.mb{margin-bottom: 1em}
+
+/* Responsive Video 
+   Based on https://github.com/niklausgerber/FitMyVideo 
+*/
+
+.video-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.flexible-container iframe,   
+.flexible-container object,
+.flexible-container video, /* for html5 video embeds */
+.flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    border: none;
+    border-radius: 4px;
+}
+
+.img{
+    border-radius: 4px;
+}
+
+
+/* Semantic Forms ----------------------------------------------------------------------- */
+
+.pfImagePreviewWrapper{
+   display: inline-block;
+   margin: 1em;
+}
+
+.pfImagePreviewWrapper img{
+   border-radius: 4px;
+}
+
+textarea,
+.formtable textarea,
+#pfForm textarea{
+   font-family: "Roboto Mono";
+   resize: both;
+   font-size: 80%;
+}
+
+#pfForm .createboxInput, #pfForm .mandatoryField{
+    font-family: "Roboto Mono";
+    font-size: 80%;
+    background-color: rgb(245, 245, 240);
+}
+
+/* Plantilla Portafolio -------------------------------------------------------------- */
+
+.portafolio{
+    display:inline-block; 
+    vertical-align:top; 
+    width: 254px; 
+    padding: 10px 20px; 
+    margin: 0 10px 10px 0; 
+    border: 1px solid #eee;
+}
+.portafolio .thumb img{}
+
+.portafolio > .thumb > .text > p {
+    line-height: 100%;
+}
+.portafolio .text{
+    font-size: 14px;
+    line-height: 1em;
+    margin: 0;
+}
+.portafolio .text .title{font-weight: bold !important; }
+.portafolio .text .name{text-style: italic !important;}
+
+/* Secure Poll ----------------------------------------------------------------------- */
+
+#securepoll > .mw-parser-output p { font-weight: bolder}
+#securepoll > hr {margin: 2em 0}
+#securepoll > .securepoll-option-choose {margin: 1em 0}
+#securepoll > .securepoll-option-choose > input[type=radio]{display: inline-block; margin: 1ex 1em}
+#securepoll > .securepoll-option-choose > label,
+#securepoll > .securepoll-option-choose > label > .mw-parser-output{display:inline}
+#securepoll > input[type=submit] {
+    background-color: #6ACA3C;
+    font-weight: 700 !important;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+    display: inline-block;
+    padding: 1ex 1em .4ex 1em;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.1);
+    white-space: nowrap;
+    border-bottom: 6px solid rgba(0,0,0,.1);
+}
+#securepoll > input[type=submit]:hover{background-color: #50992E;}
+
+/* Ayuda del Editor ----------------------------------------------------------------------- */
+#wikiEditor-section-characters,
+#wikiEditor-section-help {
+    font-size: 80%;
+}
+#wikiEditor-section-help .cell-syntax {
+    font-size: 75%;
+}
+
+/* Plantilla Observación ------------------------------------------------------------------ */
+.obs > p > a > img{
+    padding: 2em;
+    border: 1px solid #CCC;
+}
+.obs > blockquote{
+    border: none;
+    font-size: 1em;
+    font-family: Alegreya;
+}
+input[type="checkbox"]{margin-right: 5px}
+
+.wikiEditor-ui-toolbar .page-characters div span {
+    padding: 5px;
+    display: inline-block;
+    height: 32px;
+    border-radius: .25ex;
+}
+.mapboxgl-canvas-container{
+    overflow: hidden;
+}

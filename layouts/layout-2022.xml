@@ -23,7 +23,7 @@ Modificado de Chameleon -> fixedhead.xml
 		</row>
 	</grid>
 
-	<grid class="pageFooter mb-2 mt-4" mode="fixedwidth">
+	<grid class="pageFooter mb-2 mt-4">
 		<row class="mx-3">
 			<cell>
 				<component type="FooterInfo"/>
@@ -31,6 +31,14 @@ Modificado de Chameleon -> fixedhead.xml
 			<cell>
 				<component type="FooterPlaces" class="justify-content-end"/>
 				<component type="FooterIcons" class="justify-content-end mt-2 mb-0"/>
+			</cell>
+		</row>
+		<row>
+			<cell>
+				<component type="NavbarHorizontal" collapsible="no" class="small mb-2" >
+					<component type="Toolbox" flatten="no" class="dropup"/>
+					<component type="LangLinks" flatten="no" class="dropup"/>
+				</component>
 			</cell>
 		</row>
 	</grid>
