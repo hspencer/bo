@@ -612,9 +612,11 @@ pre,
 }
 
 .fullscreen {
-	width: 99.2vw;
-	height: auto;
-	margin: 0 -50.7%;
+	width: 100vw;
+	height: auto !important;
+	position: relative;
+	margin: 0;
+	left: -17vw;
 }
 
 .img-circle{
