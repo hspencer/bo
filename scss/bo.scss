@@ -59,22 +59,12 @@ $btn-default-focus-border: $btn-default-focus-bg;
 
 $btn-default-visited-bg: $color-dark-blue;
 $btn-default-visited-border: $btn-default-visited-bg;
-
-$footer-height: 200px;
 $base-radius: 4px;
 
-$font-family-sans-serif: "Alegreya Sans",
-sans-serif !default;
-$font-family-serif: Alegreya,
-Times,
-serif !default;
-$font-family-monospace: "Roboto Mono",
-Menlo,
-Monaco,
-Consolas,
-monospace !default;
+$font-family-sans-serif: "Alegreya Sans", sans-serif !default;
+$font-family-serif: Alegreya, Times, serif !default;
+$font-family-monospace: "Roboto Mono", Menlo, Monaco, Consolas, monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-
 
 
 /** ------------------------------------------------------------------ navbar      */
@@ -254,7 +244,7 @@ table{
 }
 
 /** ------------------------------------------------------------------ Titles for all pages */
-.firstHeading {
+.mw-body .firstHeading {
 	border-bottom: 1px solid transparent;
 	margin-bottom: 0;
 	font-family: 'Alegreya Sans';
@@ -499,13 +489,21 @@ code {
 
 #toc,
 .toc {
-	h2 {
-		display: none;
-	}
+	display: block;
+	margin-left: -1em;
+
 
 	#toctitle,
 	.toctitle {
 		text-align: left !important;
+		
+		.toctogglespan{
+			margin-left: 0;
+			float: right;
+			.toctogglelabel{
+				color: $link-color;
+			}
+		}
 	}
 
 	.toctoggle {
@@ -611,14 +609,52 @@ pre,
 	height: 100%;
 }
 
+.img-circle{
+	border-radius: 50%;
+}
+
+
+/* fullscreen */
+
 .fullscreen {
 	width: 100vw;
 	height: auto !important;
 	position: relative;
-	margin: 0;
-	left: -17vw;
 }
 
-.img-circle{
-	border-radius: 50%;
+@media (min-width: 1200px){
+	.fullscreen{
+		margin: 0 calc(-1 * (100vw - 977px) / 2 - 1rem);
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 1105px){
+	.fullscreen{
+		margin: 0 calc(-1 * (100vw - 898px) / 2 - 1rem);
+	}
+}
+
+@media (max-width: 1104px) and (min-width: 993px){
+	.fullscreen{
+		margin: 0 calc(-1 * (100vw - 961px) / 2 - 1rem);
+	}
+}
+
+
+@media (max-width: 992px) and (min-width: 769px) {
+	.fullscreen{
+		margin: 0 calc(-1 * (100vw - 721px) / 2 - 1rem);
+	}
+}
+
+@media (max-width: 768px) and (min-width: 541px) {
+	.fullscreen{
+		margin: 0 calc(-1 * (100vw - 542px) / 2 - 1rem);
+	}
+}
+
+@media (max-width: 540px) and (min-width: 0)  {
+	.fullscreen{
+		margin: 0 -0.92rem;
+	}
 }
