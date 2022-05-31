@@ -102,9 +102,13 @@ a:visited {
 	color: $link-color;
 }
 
+.mw-parser-output a.extiw:visited, .mw-parser-output a.external:visited {
+	color: darken($link-color, .2);
+  }
+
 a:active,
 .mw-body a.external:active {
-	color: lighten($link-color, .2);
+	color: $link-color;
 }
 
 a.new {
@@ -128,9 +132,9 @@ a.new {
 .mw-body {
 	h1 {
 		letter-spacing: -0.02ex;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 2.25rem;
-		color:rgba(0, 0, 0, 0.347);
+		color:rgba(0, 0, 0, 0.5);
 	}
 	
 	h2 {
