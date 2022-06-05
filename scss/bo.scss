@@ -192,7 +192,6 @@ div#mw-content-text {
 
 	li,
 	p {
-		font-size: $font-size-base;
 		font-weight: 400;
 	}
 }
@@ -281,6 +280,19 @@ table{
 
 .well{
 	background-color: rgba(225, 214, 183, 0.13);
+}
+
+/** ------------------------------------------------------------------ gallery -------------------*/
+
+.gallerybox{
+	.gallerytext{
+		p{
+			font-style: italic;
+			font-size: 80%;
+			text-align: left;
+			line-height: 100%;
+		}
+	}
 }
 
 /** ------------------------------------------------------------------ Front page collapse titles */
