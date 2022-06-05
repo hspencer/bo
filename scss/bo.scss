@@ -111,12 +111,18 @@ a:active,
 	color: $link-color;
 }
 
-a.new {
-
-	&:link,
-	&:hover,
-	&:visited {
-		color: $color-gray;
+a[href].new {
+	color: $color-gray;
+	::link,
+	::hover,
+	::visited {
+		color:darken($color-gray, .1);
+	}
+	::after{
+		content: "+";
+	}
+	::hover{
+		text-decoration: underline;
 	}
 }
 
@@ -620,25 +626,32 @@ pre,
 
 /* fullscreen */
 
+.full-width,
 .fullscreen {
 	width: 100vw;
-	height: auto !important;
 	position: relative;
 }
 
+.fullscreen{
+	height: auto !important;
+}
+
 @media (min-width: 1200px){
+	.full-width,
 	.fullscreen{
 		margin: 0 calc(-1 * (100vw - 977px) / 2 - 1rem);
 	}
 }
 
 @media (max-width: 1199px) and (min-width: 1105px){
+	.full-width,
 	.fullscreen{
 		margin: 0 calc(-1 * (100vw - 898px) / 2 - 1rem);
 	}
 }
 
 @media (max-width: 1104px) and (min-width: 993px){
+	.full-width,
 	.fullscreen{
 		margin: 0 calc(-1 * (100vw - 961px) / 2 - 1rem);
 	}
@@ -646,19 +659,38 @@ pre,
 
 
 @media (max-width: 992px) and (min-width: 769px) {
+	.full-width,
 	.fullscreen{
 		margin: 0 calc(-1 * (100vw - 721px) / 2 - 1rem);
 	}
 }
 
 @media (max-width: 768px) and (min-width: 541px) {
+	.full-width,
 	.fullscreen{
 		margin: 0 calc(-1 * (100vw - 542px) / 2 - 1rem);
 	}
 }
 
 @media (max-width: 540px) and (min-width: 0)  {
+	.full-width,
 	.fullscreen{
 		margin: 0 -0.92rem;
+	}
+}
+
+/* new */
+
+li.smw-row .smw-field .smw-value a::after {
+	content: " ";
+}
+
+a.new{
+	color:rgba(132, 150, 117, .25);
+	:after{
+		content: "+"
+	}
+	:hover{
+		color: #0000001A;
 	}
 }
