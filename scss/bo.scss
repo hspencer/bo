@@ -9,6 +9,7 @@
 */
 
 
+
 /** ------------------------------------------------------------------ Variables */
 
 
@@ -65,7 +66,7 @@ $font-family-sans-serif: "Alegreya Sans", sans-serif !default;
 $font-family-serif: Alegreya, Times, serif !default;
 $font-family-monospace: "Roboto Mono", Menlo, Monaco, Consolas, monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-
+$font-size-base: 1.1rem !default;
 
 /** ------------------------------------------------------------------ navbar      */
 
@@ -113,9 +114,9 @@ a:active,
 
 a[href].new {
 	color: $color-gray;
-	::link,
-	::hover,
-	::visited {
+	&::link,
+	&::hover,
+	&::visited {
 		color:darken($color-gray, .1);
 	}
 	::after{
@@ -191,7 +192,7 @@ div#mw-content-text {
 
 	li,
 	p {
-		font-size: 1.1rem;
+		font-size: $font-size-base;
 		font-weight: 400;
 	}
 }
@@ -337,10 +338,11 @@ form#editform.mw-editform {
 }
 
 .wikiEditor-ui {
+	/*
 	.wikiEditor-ui.controls {}
 
 	.wikiEditor-ui-clear {}
-
+    */
 	.wikiEditor-ui-view {
 		border: none;
 
@@ -624,7 +626,7 @@ pre,
 }
 
 
-/* fullscreen */
+/* fullscreen y full-width */
 
 .full-width,
 .fullscreen {
@@ -632,7 +634,7 @@ pre,
 	position: relative;
 }
 
-.fullscreen{
+.full-width{
 	height: auto !important;
 }
 
@@ -679,18 +681,12 @@ pre,
 	}
 }
 
-/* new */
+/* Enlaces para resultados de inline semantic queries */
 
 li.smw-row .smw-field .smw-value a::after {
 	content: " ";
 }
 
-a.new{
-	color:rgba(132, 150, 117, .25);
-	:after{
-		content: "+"
-	}
-	:hover{
-		color: #0000001A;
-	}
-}
+a[href].new{color: rgba(0, 0, 0, .3) !important}
+a[href].new::after{content: " "}
+a[href].new::hover{text-decoration: underline; color: rgba(0, 0, 0, .5)}
